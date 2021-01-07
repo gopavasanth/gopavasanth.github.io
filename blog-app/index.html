@@ -1,0 +1,64 @@
+---
+layout: default
+current: home
+class: 'home-template'
+navigation: True
+---
+
+<!-- < default -->
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
+<head>
+  <script src="//platform-api.sharethis.com/js/sharethis.js#property=5b3207ca9f6fe8001146b07c&product=sticky-share-buttons"></script>
+  
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+<!-- The big featured header, it uses blog cover image as a BG if available -->
+<header class="site-header outer {% if page.cover or site.cover %}" style="background-image:  url({{ site.baseurl }}{% if page.cover %}{{ page.cover }}{% elsif site.cover %}{{ site.cover }}{% endif %}) {% else %}no-cover{% endif %}">
+    <div class="inner">
+        <div class="site-header-content">
+            <h1 class="site-title">
+                {% if site.logo %}
+                    <img id="tilt" class="site-logo d-block mx-auto m-3" style="border-radius:50%; height:180px; width:180px" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}" data-aos="zoom-in-up"/>
+                {% else %}
+                    {{ site.title }}
+                {% endif %}
+            </h1>
+            <h2 class="site-description">{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}</h2>
+        </div>
+        {% include site-nav.html %}
+    </div>
+</header>
+
+<!-- The main content area -->
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <div class="post-feed">
+            <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
+            {%  include post-card.html %}
+        </div>
+    </div>
+     <!-- Social Media Plugin -->
+    <div class="sharethis-sticky-share-buttons"></div>
+
+     <!-- <script src="//www.powr.io/powr.js?external-type=html"></script>
+    <div class="powr-multi-slider" id="4134b755_1530353063"></div> -->
+    
+      <!-- Hit Counter -->
+        <script src="//www.powr.io/powr.js?external-type=html"></script>
+        <div class="powr-hit-counter" id="66078089_1530337017"></div>
+
+    <!-- Initialize Animation -->
+        <script>
+            AOS.init();
+        </script>
+</main>

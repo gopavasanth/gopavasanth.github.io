@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> - Articles</title>
+    <description>Life is all about experiences</description>
+    <link>
+    http://localhost:4000</link>
+    
+      
+      <item>
+        <title>Year in Review 2020</title>
+        
+          <description>&lt;p&gt;Year in Review 2020&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sun, 27 Dec 2020 00:00:00 +0530</pubDate>
+        <link>
+        http://localhost:4000/Year-in-Review-2020</link>
+        <guid isPermaLink="true">http://localhost:4000/Year-in-Review-2020</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Me in WMHACK 2020</title>
+        
+          <description>&lt;p&gt;Me In WMHACK 2020&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 12 May 2020 00:00:00 +0530</pubDate>
+        <link>
+        http://localhost:4000/Me-in-WMHACK-2020</link>
+        <guid isPermaLink="true">http://localhost:4000/Me-in-WMHACK-2020</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Year in Review 2019</title>
+        
+          <description>&lt;p&gt;Year in Review 2019&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 31 Dec 2019 00:00:00 +0530</pubDate>
+        <link>
+        http://localhost:4000/Year-in-Review-2019</link>
+        <guid isPermaLink="true">http://localhost:4000/Year-in-Review-2019</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Into GSoC and WMF Hackathon 2019 !</title>
+        
+          <description>&lt;p&gt;Into GSoC and WMF Hackathon 2019 !&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 28 May 2019 00:00:00 +0530</pubDate>
+        <link>
+        http://localhost:4000/Into-GSoC-and-WMF-Hackathon-2019-!</link>
+        <guid isPermaLink="true">http://localhost:4000/Into-GSoC-and-WMF-Hackathon-2019-!</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>How to Install MediaWiki in Linux?</title>
+        
+          <description>&lt;p&gt;How to Install MediaWiki in Linux?&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Fri, 10 Aug 2018 00:00:00 +0530</pubDate>
+        <link>
+        http://localhost:4000/How-to-Install-Mediawiki-in-Linux</link>
+        <guid isPermaLink="true">http://localhost:4000/How-to-Install-Mediawiki-in-Linux</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Gitamritam 2k18’Yuva</title>
+        
+          <description>&lt;p&gt;Gitamritam 2k18’Yuva&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Fri, 15 Jun 2018 00:00:00 +0530</pubDate>
+        <link>
+        http://localhost:4000/Gitamritam-2k18'Yuva</link>
+        <guid isPermaLink="true">http://localhost:4000/Gitamritam-2k18'Yuva</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>FOSS DAYS</title>
+        
+          <description>&lt;p&gt;FOSS DAYS&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sat, 27 Jan 2018 00:00:00 +0530</pubDate>
+        <link>
+        http://localhost:4000/FOSS-DAYS</link>
+        <guid isPermaLink="true">http://localhost:4000/FOSS-DAYS</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>How to Install Drupal In Your Localhost</title>
+        
+          <description>&lt;p&gt;How to Install Drupal In Your Localhost?&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 25 Jan 2018 00:00:00 +0530</pubDate>
+        <link>
+        http://localhost:4000/How-To-Install-Drupal-In-Your-Localhost</link>
+        <guid isPermaLink="true">http://localhost:4000/How-To-Install-Drupal-In-Your-Localhost</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Trip On Dussehra Vacation</title>
+        
+          <description>&lt;p&gt;Trip On Dussehra Vacation&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 04 Oct 2017 00:00:00 +0530</pubDate>
+        <link>
+        http://localhost:4000/Trip-On-Dussehra-Vacation</link>
+        <guid isPermaLink="true">http://localhost:4000/Trip-On-Dussehra-Vacation</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>All About Me</title>
+        
+          <description>&lt;p&gt;All About Me&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sat, 23 Sep 2017 00:00:00 +0530</pubDate>
+        <link>
+        http://localhost:4000/All-About-Me</link>
+        <guid isPermaLink="true">http://localhost:4000/All-About-Me</guid>
+      </item>
+      
+    
+  </channel>
+</rss>
