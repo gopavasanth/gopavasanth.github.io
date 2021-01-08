@@ -213,38 +213,47 @@ into the {body} of the default.hbs template -->
 
 <p>At first, we have to install LAMP, there are many ways to install LAMP one of the recommended way is to install LAMP in one command</p>
 
-<p><code class="highlighter-rouge">sudo apt-get install lamp-server^ phpmyadmin</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install lamp-server^ phpmyadmin
+</code></pre></div></div>
 
 <p>This will install Apache, My-sql, Php in your system so no need to install all them individually.Then have to start Apache server in our system</p>
 
-<p><code class="highlighter-rouge">sudo service apache2 start</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo service apache2 start
+</code></pre></div></div>
 
 <p>This command will starts Apache server in your system, The very next thing is to navigate to /var/www/html (#Linux Users)</p>
 
-<p><code class="highlighter-rouge">cd /var/www/html</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /var/www/html
+</code></pre></div></div>
 
 <p>This will takes you to <code class="highlighter-rouge">/var/www/html</code> folder</p>
 
 <p>We can’t access copy, paste into this folder as this is highly encrypted so we have to give permission to access changes here by the following command</p>
 
-<p><code class="highlighter-rouge">sudo chown -R &lt;username&gt; /var/www/html</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chown -R &lt;username&gt; /var/www/html
+</code></pre></div></div>
 
 <p>Now we have to clone the core of drupal8, So we usually clone through git</p>
 
-<p><code class="highlighter-rouge">git clone --branch 8.0.x http://git.drupal.org/project/drupal.git drupal</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone --branch 8.0.x http://git.drupal.org/project/drupal.git drupal
+</code></pre></div></div>
 
 <p>This will clone in to your /var/www/html ,As because we will host from <code class="highlighter-rouge">/var/www/html</code></p>
 
 <p>Then we have to go into the Drupal folder and have to install composer if you already have composer then you have to update it by installing Drupal</p>
 
-<p><code class="highlighter-rouge">sudo apt install composer</code>
-<code class="highlighter-rouge">composer update</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install composer
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer update
+</code></pre></div></div>
 
 <p>The composer should be installed perfectly and update perfectly this will takes a lot of time 7-8 min so we have to wait with patience don’t interrupt in the middle as it will corrupt your files.</p>
 
 <p>Then you have to go to <code class="highlighter-rouge">/var/www/html/sites/default/</code> then copy default.settings.php and make it settings.php and paste it there.</p>
 
-<p><code class="highlighter-rouge">cd /var/www/html/drupal8/sites/default</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /var/www/html/drupal8/sites/default
+</code></pre></div></div>
 
 <p>then go to the <code class="highlighter-rouge">localhost/phpmyadmin/</code> and click database on the top left and Enter name of your new database as ‘drupal8’  and select utf8 Unicode from drop-down box and then create a database and then setup SQL password for the root ,Now we all ready do set Drupal  o your local host so navigate to <code class="highlighter-rouge">localhost/Drupal</code> in your browser</p>
 
@@ -307,26 +316,24 @@ into the {body} of the default.hbs template -->
             
                 <section class="post-full-comments">
                   <div id="disqus_thread"></div>
-<script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://foss-blog-1.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
+                  <div id="disqus_thread"></div>
+                  <script>
+                      /**
+                      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                      /*
+                      var disqus_config = function () {
+                      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                      };
+                      */
+                      (function() { // DON'T EDIT BELOW THIS LINE
+                      var d = document, s = d.createElement('script');
+                      s.src = 'https://gopa-blog-app.disqus.com/embed.js';
+                      s.setAttribute('data-timestamp', +new Date());
+                      (d.head || d.body).appendChild(s);
+                      })();
+                  </script>
                 </section>
             
 

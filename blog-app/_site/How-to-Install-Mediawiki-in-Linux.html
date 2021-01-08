@@ -187,7 +187,8 @@ into the {body} of the default.hbs template -->
 
 <p><img src="assets/images/lamp.jpeg" alt="lamp.jpeg" /></p>
 
-<p><code class="highlighter-rouge">sudo apt install lamp-server^</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install lamp-server^
+</code></pre></div></div>
 
 <h4 id="2-installation-and-configuration-of-git">2. Installation and Configuration of Git</h4>
 
@@ -195,73 +196,89 @@ into the {body} of the default.hbs template -->
 
 <p><img src="assets/images/git.png" alt="git.png" /></p>
 
-<p><code class="highlighter-rouge">sudo apt-get install git</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install git
+</code></pre></div></div>
 
 <p>Now we have installed git ^ ^ we have to configure it using our personal information, Check you git email-id and username using this commnd.</p>
 
-<p><code class="highlighter-rouge">git config -l</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config -l
+</code></pre></div></div>
 
 <p>If you wants to change your email  or username, you can reset using these command.</p>
 
-<p><code class="highlighter-rouge"> git config --global user.email "example@example.com"</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global user.email "example@example.com"
+</code></pre></div></div>
 
-<p><code class="highlighter-rouge"> git config --global user.name "example"</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global user.name "example"
+</code></pre></div></div>
 
 <h4 id="3-setting-up-ssh-keys-in-gerrit">3. Setting up SSH keys in Gerrit</h4>
 
 <p>SSH keys are set up to establish a secure connection to our computer and Gerrit. To make sure whether you need to generate a brand new key, you need to check if one already exists. List the files in your .ssh directory (if you have one):</p>
 
-<p><code class="highlighter-rouge">ls ~/.ssh</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ls ~/.ssh
+</code></pre></div></div>
 
 <p>If you see a file id_rsa.pub here you may skip to step – 4.
 To generate a new SSH key</p>
 
-<p><code class="highlighter-rouge">ssh-keygen -t rsa -C "your_email_id@gmail.com"</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-keygen -t rsa -C "your_email_id@gmail.com"
+</code></pre></div></div>
 
 <h4 id="4-add-your-ssh-key">4. Add your SSH key</h4>
 
 <p>Open your public key file with any text editor and copy your SSH key exactly as it is written without modifying it. Copy the full text, including the “ssh-rsa” prefix, the key itself, and the email address.</p>
 
-<p><code class="highlighter-rouge">cat ~/.ssh/id_rsa.pub</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat ~/.ssh/id_rsa.pub
+</code></pre></div></div>
 
 <h4 id="5-add-ssh-key-to-use-with-git">5. Add SSH key to use with Git</h4>
 
 <p>Get ssh-agent</p>
 
-<p><code class="highlighter-rouge">eval ssh-agent</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>eval ssh-agent
+</code></pre></div></div>
 
 <p>Add your private key to the agent</p>
 
-<p><code class="highlighter-rouge">ssh-add .ssh/id_rsa</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-add .ssh/id_rsa
+</code></pre></div></div>
 
 <p>Configure your settings accurately and give your user-id and email-id as per you registered in gerrit profile. You can check it in your gerrit by going into settings and then to Profile</p>
 
-<p><code class="highlighter-rouge">ssh -p 29418 &lt;username&gt;@gerrit.wikimedia.org</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh -p 29418 &lt;username&gt;@gerrit.wikimedia.org
+</code></pre></div></div>
 
 <h4 id="6-download-and-install-mediawiki-code-base">6. Download and Install Mediawiki code base</h4>
 
 <p>You can download the mediawiki Core code base using git.</p>
 
-<p><code class="highlighter-rouge">git clone ssh://&lt;username&gt;@gerrit.wikimedia.org:29418/mediawiki/core.git</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone ssh://&lt;username&gt;@gerrit.wikimedia.org:29418/mediawiki/core.git
+</code></pre></div></div>
 
 <p>If you download the zip file unzip the MediaWiki-1.31.0 Using this command</p>
 
-<p><code class="highlighter-rouge">tar xvzf mediawiki-*.tar.gz</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tar xvzf mediawiki-*.tar.gz
+</code></pre></div></div>
 
 <p>Now delete the zip file</p>
 
-<p><code class="highlighter-rouge">rm -r mediawiki-1.31.0.tar.gz</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rm -r mediawiki-1.31.0.tar.gz
+</code></pre></div></div>
 
-<p>renaming the mediaWiki-1.31.0 to core
-<code class="highlighter-rouge">mv mediaWiki-1.31.0 core</code></p>
+<p>renaming the mediaWiki-1.31.0 to core</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mv mediaWiki-1.31.0 core
+</code></pre></div></div>
 
 <p>Now copy your core folder to your <code class="highlighter-rouge">/var/www/html/</code></p>
 
-<p><code class="highlighter-rouge">cd /var/www/</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /var/www/
+</code></pre></div></div>
 
 <p>For this you have to give the read and write permissions, You can give these permissions using the following command</p>
 
-<p><code class="highlighter-rouge">sudo chmod -R 777 /var/www/html</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chmod -R 777 /var/www/html
+</code></pre></div></div>
 
 <p>Go to your <code class="highlighter-rouge">localhost/core/</code> and set up your database.</p>
 
@@ -323,26 +340,24 @@ To generate a new SSH key</p>
             
                 <section class="post-full-comments">
                   <div id="disqus_thread"></div>
-<script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://foss-blog-1.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
+                  <div id="disqus_thread"></div>
+                  <script>
+                      /**
+                      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                      /*
+                      var disqus_config = function () {
+                      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                      };
+                      */
+                      (function() { // DON'T EDIT BELOW THIS LINE
+                      var d = document, s = d.createElement('script');
+                      s.src = 'https://gopa-blog-app.disqus.com/embed.js';
+                      s.setAttribute('data-timestamp', +new Date());
+                      (d.head || d.body).appendChild(s);
+                      })();
+                  </script>
                 </section>
             
 
