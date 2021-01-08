@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover: assets/images/drupal_logo.png
+cover: assets/images/drupal.jpg
 navigation: True
 title: How to Install Drupal In Your Localhost
 date: 2018/01/25

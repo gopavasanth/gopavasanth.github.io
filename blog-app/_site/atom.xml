@@ -141,20 +141,5 @@
       </item>
       
     
-      
-      <item>
-        <title>All About Me</title>
-        
-          <description>&lt;p&gt;All About Me&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Sat, 23 Sep 2017 00:00:00 +0530</pubDate>
-        <link>
-        http://localhost:4000/All-About-Me</link>
-        <guid isPermaLink="true">http://localhost:4000/All-About-Me</guid>
-      </item>
-      
-    
   </channel>
 </rss>

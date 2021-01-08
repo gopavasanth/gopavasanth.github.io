@@ -93,3 +93,7 @@ exclude:
   - changelog.md
   - "*.Rmd"
   - .git*
+
+collections:
+  author:
+    output: true
