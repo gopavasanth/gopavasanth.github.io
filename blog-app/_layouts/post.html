@@ -44,10 +44,10 @@ into the {body} of the default.hbs template -->
                 <h1 class="post-full-title">{{ page.title }}</h1>
             </header>
 
-            {% if page.cover %}
+            <!-- {% if page.cover %}
             <figure class="post-full-image" style="background-image: url({{ site.baseurl }}{{ page.cover }})">
             </figure>
-            {% endif %}
+            {% endif %} -->
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
@@ -55,13 +55,25 @@ into the {body} of the default.hbs template -->
                 </div>
             </section>
 
+
             <!-- Email subscribe form at the bottom of the page -->
             {% if site.subscribers %}
-                <section class="subscribe-form">
-                    <h3 class="subscribe-form-title">Subscribe to {{ site.title }}</h3>
-                    <p>Get the latest posts delivered right to your inbox</p>
-                    {% include subscribe-form.html placeholder="youremail@example.com" %}
-                </section>
+            <section class="subscribe-form">       
+                <div class="container">
+                 <div class="row text-center gutters-y">
+                   <div class="col-sm-8 col-md-6 col-lg-4 mx-auto mb-4 mb-md-7 mb-lg-0">
+                     <div class="px-2 px-lg-3">
+                       <h2>Subscribe to {{ site.title }}</h2>
+                       <p>Get the latest posts delivered right to your inbox</p>
+                       <form action="https://submit-form.com/oNEilyqh" target="_self">
+                             <input aria-label="email" class="form-group px-2 py-1 border-0 rounded" type="email" name="email" placeholder="Enter your email..." required>
+                             <button type="submit" class="btn-warning py-1 px-2 rounded border-0">Submit</button>
+                        </form>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </section>
             {% endif %}
 
             <footer class="post-full-footer">

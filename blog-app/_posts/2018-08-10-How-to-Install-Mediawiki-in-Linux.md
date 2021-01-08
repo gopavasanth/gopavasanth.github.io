@@ -10,7 +10,6 @@ class: post-template
 subclass: 'post tag-OpenSource'
 author: Gopa-Vasanth
 ---
-How to Install MediaWiki in Linux?
 
 Dear friends, I’m very happy to see you here, Thank’s for your interest. Let’s start contributing to mediawiki software. Please follow all these steps and do not skip any of the steps, all this process can be completed  in half an hour, In case if you encounter with any errors you can contact me or post a comment in this blogpost anytime,  I will try my best to give provide a  very quick reply.
 

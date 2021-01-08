@@ -11,8 +11,6 @@ subclass: 'post tag-OpenSource'
 author: Gopa-Vasanth
 ---
 
-Into GSoC and WMF Hackathon 2019 !
-
 Being an undergraduate in Computer Science at Amrita Vishwa Vidyapeetham, over the past couple of years my love for the field of Computer Science has grown exponentially. Being an active member of Free and Open Source(FOSS@Amrita) club at my university, I have acquired a various set of skills including analyzing and debugging of large code bases, developing problem-solving skills and organizing as well coordinating technical events.
 
 In my first year, I applied to the Google Summer of Code 2018 through the Wikimedia Foundation but couldn’t achieve it, I got to know that I have to learn lot’s of things and continued staying involved with the various Wikimedia Foundation technical projects and discussions.

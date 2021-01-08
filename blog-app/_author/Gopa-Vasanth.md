@@ -1,7 +1,6 @@
 ---
-layout: post
-current: post
-cover: assets/images/Gopa.jpg
+layout: page
+current: page
 short_name: Gopa-Vasanth
 name: Gopa-Vasanth
 position: Owner
@@ -9,7 +8,7 @@ navigation: True
 title: All About Me
 date: 2018/01/25
 tags: about
-class: post-template
+class: page-template
 subclass: 'post tag-about'
 author: Gopa-Vasanth
 ---

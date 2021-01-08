@@ -10,7 +10,6 @@ class: post-template
 subclass: 'post tag-OpenSource'
 author: Gopa-Vasanth
 ---
-How to Install Drupal In Your Localhost?
 
 Hello folks, Today Let’s start contributing to the Open source!  with step by step process
 

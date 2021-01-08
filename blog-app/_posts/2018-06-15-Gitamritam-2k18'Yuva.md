@@ -11,7 +11,6 @@ subclass: 'post tag-vacation'
 author: Gopa-Vasanth
 ---
 
-Gitamritam 2k18’Yuva
 
 This is the wonderful camp I ever attended before, previously during my school age I attended a yoga camp in 5th standard but this is completely different from all the other camps, I’m here to describe my experience of my Gitamritam camp.
 
