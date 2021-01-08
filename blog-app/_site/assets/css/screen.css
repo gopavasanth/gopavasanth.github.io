@@ -610,8 +610,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
     margin: 0 auto;
     padding: 70px 100px 0;
     min-height: 230px;
-    /* font-family: Georgia, serif; */
-    font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: Georgia, serif;
     font-size: 2.2rem;
     line-height: 1.6em;
     background: #fff;
@@ -811,7 +810,7 @@ Usage (In Ghost editor):
     line-height: 1.5em;
     background: color(var(--darkgrey) l(-3%));
     border-radius: 5px;
-    background: #eee;
+    background: rgb(204, 199, 199);
 }
 
 .post-full-content pre code {
@@ -1072,16 +1071,18 @@ Usage (In Ghost editor):
 }
 
 .subscribe-email {
+    display: block;
     padding: 10px;
-    width: 50%;
-    border: color(black) 1px solid;
-    color: black;
+    width: 100%;
+    border: color(var(--lightgrey) l(+7%)) 1px solid;
+    color: var(--midgrey);
     font-size: 1.8rem;
     line-height: 1em;
     font-weight: normal;
     user-select: text;
     border-radius: 5px;
     transition: border-color 0.15s linear;
+
     -webkit-appearance: none;
 }
 
@@ -1782,12 +1783,18 @@ Usage (In Ghost editor):
     padding: 0 25px;
     height: 52px;
     outline: none;
-    color: #000;
+    color: #fff;
     font-size: 1.7rem;
     line-height: 37px;
     font-weight: 400;
     text-align: center;
     text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+    background: linear-gradient(
+    color(var(--blue) whiteness(+7%)),
+    color(var(--blue) lightness(-7%) saturation(-10%)) 60%,
+    color(var(--blue) lightness(-7%) saturation(-10%)) 90%,
+    color(var(--blue) lightness(-4%) saturation(-10%))
+    );
     border-radius: 8px;
     box-shadow: 0 0 0 1px inset rgba(0,0,0,0.14);
 

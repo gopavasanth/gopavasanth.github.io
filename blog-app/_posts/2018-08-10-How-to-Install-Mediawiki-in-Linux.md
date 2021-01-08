@@ -19,7 +19,7 @@ Very first and basic step to Install LAMP server for mediawiki localhost setup. 
 
 ![lamp.jpeg](assets/images/lamp.jpeg)
 
-```
+```bash
 sudo apt install lamp-server^
 ```
 
@@ -29,23 +29,23 @@ If you have already installed git you can skip this step, if not please install 
 
 ![git.png](assets/images/git.png)
 
-```
+```bash
 sudo apt-get install git
 ```
 
 Now we have installed git ^ ^ we have to configure it using our personal information, Check you git email-id and username using this commnd.
 
-```
+```bash
 git config -l
 ```
 
 If you wants to change your email  or username, you can reset using these command.
 
-```
+```bash
 git config --global user.email "example@example.com"
 ```
 
-```
+```bash
 git config --global user.name "example"
 ```
 
@@ -53,14 +53,14 @@ git config --global user.name "example"
 
 SSH keys are set up to establish a secure connection to our computer and Gerrit. To make sure whether you need to generate a brand new key, you need to check if one already exists. List the files in your .ssh directory (if you have one):
 
-```
+```bash
 ls ~/.ssh
 ```
 
 If you see a file id_rsa.pub here you may skip to step – 4.
 To generate a new SSH key
 
-```
+```bash
 ssh-keygen -t rsa -C "your_email_id@gmail.com"
 ```
 
@@ -68,7 +68,7 @@ ssh-keygen -t rsa -C "your_email_id@gmail.com"
 
 Open your public key file with any text editor and copy your SSH key exactly as it is written without modifying it. Copy the full text, including the “ssh-rsa” prefix, the key itself, and the email address.
 
-```
+```bash
 cat ~/.ssh/id_rsa.pub
 ```
 
@@ -76,19 +76,19 @@ cat ~/.ssh/id_rsa.pub
 
 Get ssh-agent
 
-```
+```bash
 eval ssh-agent
 ```
 
 Add your private key to the agent
 
-```
+```bash
 ssh-add .ssh/id_rsa
 ```
 
 Configure your settings accurately and give your user-id and email-id as per you registered in gerrit profile. You can check it in your gerrit by going into settings and then to Profile
 
-```
+```bash
 ssh -p 29418 <username>@gerrit.wikimedia.org
 ```
 
@@ -96,36 +96,36 @@ ssh -p 29418 <username>@gerrit.wikimedia.org
 
 You can download the mediawiki Core code base using git.
 
-```
+```bash
 git clone ssh://<username>@gerrit.wikimedia.org:29418/mediawiki/core.git
 ```
 
 If you download the zip file unzip the MediaWiki-1.31.0 Using this command
 
-```
+```bash
 tar xvzf mediawiki-*.tar.gz
 ```
 
 Now delete the zip file
 
-```
+```bash
 rm -r mediawiki-1.31.0.tar.gz
 ```
 
 renaming the mediaWiki-1.31.0 to core
-```
+```bash
 mv mediaWiki-1.31.0 core
 ```
 
 Now copy your core folder to your `/var/www/html/`
 
-```
+```bash
 cd /var/www/
 ```
 
 For this you have to give the read and write permissions, You can give these permissions using the following command
 
-```
+```bash
 sudo chmod -R 777 /var/www/html
 ```
 

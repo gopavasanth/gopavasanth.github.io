@@ -45,20 +45,20 @@ Before starting building we have to know why we are building ? for this my respo
 
 At first, we have to install LAMP, there are many ways to install LAMP one of the recommended way is to install LAMP in one command
 
-```
+```bash
 sudo apt-get install lamp-server^ phpmyadmin
 ```
 
 This will install Apache, My-sql, Php in your system so no need to install all them individually.Then have to start Apache server in our system
 
-```
+```bash
 sudo service apache2 start
 ```
 
 
 This command will starts Apache server in your system, The very next thing is to navigate to /var/www/html (#Linux Users)
 
-```
+```bash
 cd /var/www/html
 ```
 
@@ -66,13 +66,13 @@ This will takes you to `/var/www/html` folder
 
 We can’t access copy, paste into this folder as this is highly encrypted so we have to give permission to access changes here by the following command
 
-```
+```bash
 sudo chown -R <username> /var/www/html
 ```
 
 Now we have to clone the core of drupal8, So we usually clone through git
 
-```
+```bash
 git clone --branch 8.0.x http://git.drupal.org/project/drupal.git drupal
 ```
 
@@ -80,11 +80,11 @@ This will clone in to your /var/www/html ,As because we will host from `/var/www
 
 Then we have to go into the Drupal folder and have to install composer if you already have composer then you have to update it by installing Drupal
 
-```
+```bash
 sudo apt install composer
 ```
 
-```
+```bash
 composer update
 ```
 
@@ -92,7 +92,7 @@ The composer should be installed perfectly and update perfectly this will takes 
 
 Then you have to go to `/var/www/html/sites/default/` then copy default.settings.php and make it settings.php and paste it there.
 
-```
+```bash
 cd /var/www/html/drupal8/sites/default
 ```
 
