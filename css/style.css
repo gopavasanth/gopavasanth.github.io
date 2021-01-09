@@ -21,7 +21,7 @@ section {
   align-items: center;
   padding-top: 80px;
 }
-
+/* 
 .fab {
   padding: 16px;
   font-size: large;
@@ -29,8 +29,8 @@ section {
   text-align: center;
   text-decoration: none;
   margin: 8px;
-}
-
+} */
+/* 
 .nav-item {
   margin: 4px;
 }
@@ -105,7 +105,7 @@ section {
 .fa-blog {
   background: #2c4762;
   color: white;
-}
+} */
 
 .skill {
   border-radius: 15px;

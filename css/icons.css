@@ -1,0 +1,40 @@
+.effect {
+    width: 100%;
+    /* padding: 50px 0px 70px 0px; */
+
+}
+
+.effect .buttons {
+    /* margin-top: 50px; */
+    display: flex;
+    justify-content: center;
+}
+
+.effect a {
+    text-decoration: none !important;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 20px;
+    font-size: 25px;
+    overflow: hidden;
+    position: relative;
+    color: #ffff;
+    border: 2px solid #ffff;
+}
+
+/* thurio effect */
+.effect.thurio a {
+    transition: border-radius 0.2s linear 0s;
+    transform: rotate(45deg);
+}
+.effect.thurio a i {
+    transition: transform 0.01s linear 0s;
+    transform: rotate(-45deg);
+}
+.effect.thurio a:hover {
+    border-radius: 0px;
+}
