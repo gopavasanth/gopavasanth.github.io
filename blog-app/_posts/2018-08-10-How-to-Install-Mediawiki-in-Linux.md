@@ -5,7 +5,7 @@ cover: assets/images/mediawiki.png
 navigation: True
 title: How to Install MediaWiki in Linux?
 date: 2018/08/10
-tags: oss mediawiki
+tags: oss wikimedia
 class: post-template
 subclass: 'post tag-OpenSource'
 author: Gopa-Vasanth

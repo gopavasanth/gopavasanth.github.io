@@ -5,7 +5,7 @@ cover: assets/images/intogsoc-1.jpeg
 navigation: True
 title: Into GSoC and WMF Hackathon 2019 !
 date: 2019/05/28
-tags: oss mediawiki gsoc hackathon
+tags: oss wikimedia gsoc hackathon
 class: post-template
 subclass: 'post tag-OpenSource'
 author: Gopa-Vasanth

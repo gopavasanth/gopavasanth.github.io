@@ -5,7 +5,7 @@ cover: assets/images/gita.jpeg
 navigation: True
 title: Gitamritam 2k18’Yuva
 date: 2018/06/15
-tags: oss gitamrita
+tags: gitamritam vacation
 class: post-template
 subclass: 'post tag-vacation'
 author: Gopa-Vasanth
