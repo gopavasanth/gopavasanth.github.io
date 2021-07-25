@@ -1,7 +1,7 @@
 body {
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  background: linear-gradient(rgba(1, 1, 1, 0.9), rgba(1, 1, 1, 0.9)),
+  background: linear-gradient(rgba(44, 39, 39, 0.9), rgba(44, 39, 39, 0.9)),
     url("../Images/code.jpg");
   background-color: #000000; /* Used if the image is unavailable */
   background-position: center; /* Center the image */
@@ -361,7 +361,7 @@ xslide
   display: inline-block;
   overflow: hidden;
   letter-spacing: 2px;
-  animation: typing 5s steps(30, end), blink .75s step-end infinite;
+  animation: typing 5s steps(30, end), blink 0.75s step-end infinite;
   white-space: nowrap;
   font-size: 30px;
   font-weight: 700;
@@ -370,20 +370,20 @@ xslide
 }
 
 @keyframes typing {
-  from { 
-      width: 0% 
+  from {
+    width: 0%;
   }
-  to { 
-      width: 100% 
+  to {
+    width: 100%;
   }
 }
 
 @keyframes blink {
-  from, to { 
-      border-color: transparent 
+  from,
+  to {
+    border-color: transparent;
   }
-  50% { 
-      border-color: orange; 
+  50% {
+    border-color: orange;
   }
 }
-
