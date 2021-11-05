@@ -17,10 +17,13 @@
 <body>
     <div id="app">
         <h1> WhatsApp Karo</h1>
-        <label for="phone">Phone number:</label>
-        <input id="app" v-model="number" type="tel" pattern="[6789][0-9]{9}"> <br /><br />
+        <div class="form-group">
+            <label for="phoneNumber">Phone Number:</label>
+            <input class="form-control" v-model="number" type="tel" pattern="[6789][0-9]{9}" maxlength="10"
+                placeholder="">
+        </div>
         <a :href="'http://wa.me/+91' + number"><button type="button" class="btn btn-success"><i
-                    class="bi bi-whatsapp"></i> Whats App</button></a>
+                    class="bi bi-whatsapp"></i> WhatsApp</button></a>
     </div>
 
     <script>
