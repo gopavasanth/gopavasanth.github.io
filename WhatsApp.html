@@ -20,6 +20,9 @@
     <title>WhatsApp Karo </title>
     <link rel="icon" href="Images/WhatsApp.ico" type="image/gif" sizes="16x16">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body>
@@ -31,16 +34,18 @@
             <input class="form-control" v-model="number" type="tel" pattern="[6789][0-9]{9}" maxlength="10"
                 placeholder="">
         </div>
-        <a :href="'http://wa.me/+91' + number"><button type="button" class="btn btn-success"><i
-                    class="bi bi-whatsapp"></i> WhatsApp</button></a>
+
+        <a :href="'http://wa.me/+91' + number">
+            <button type="button" id="button" class="btn btn-success"><i class="bi bi-whatsapp"></i> WhatsApp</button>
+        </a>
+
     </div>
 
-    <!-- Footer -->
-    <!-- <footer id="footer" class="m-3 mx-auto">
-        <div class="text-center text-white p-3">Designed By :
-            Gopa Vasanth
+    <footer>
+        <div class="text-center text-white p-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+            style="background-color: rgba(0,0,0,0.8);   margin-top: auto;">Designed with ❤️ by Gopa Vasanth
         </div>
-    </footer> -->
+    </footer>
 
     <script>
         new Vue({
@@ -51,6 +56,22 @@
                 };
             }
         })
+
+        // let input = document.querySelector(".form-control");
+        // let button = document.querySelector(".btn");
+
+        // button.disabled = true; //setting button state to disabled
+
+        // input.addEventListener("change", stateHandle);
+
+        // function stateHandle() {
+        //     if (document.querySelector(".form-control").value === "") {
+        //         button.disabled = true; //button remains disabled
+        //     } else {
+        //         button.disabled = false; //button is enabled
+        //     }
+        // }
+        AOS.init();
     </script>
 
     <!-- Statcounter -->
@@ -72,33 +93,40 @@
 
 
 <style>
+    html {
+        height: 100%;
+    }
+
     body {
         background-image: url('https://i.pinimg.com/originals/e8/d9/4e/e8d94e1e8b6b530ad315e9385290141b.jpg');
         background-repeat: no-repeat;
-        display: flex;
     }
 
     #app {
-        position: center;
         padding: 40px 40px 40px 40px;
         width: 400px;
         text-align: center;
         margin: auto;
+        display: flex;
+        flex-direction: column;
         margin-top: 10%;
+        align-items: center;
     }
 
     h1 {
         color: #ffff;
         text-align: center;
-        font-family: "SIMPSON";
-    }
-
-    #footer {
-        float: bottom;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
     label {
         color: #ffff;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
 </style>
 
