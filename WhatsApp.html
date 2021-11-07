@@ -22,6 +22,7 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="manifest" href="manifest.webmanifest">
 
 </head>
 
@@ -35,60 +36,19 @@
                 placeholder="">
         </div>
 
-        <a :href="'http://wa.me/+91' + number">
-            <button type="button" id="button" class="btn btn-success"><i class="bi bi-whatsapp"></i> WhatsApp</button>
-        </a>
-
+        <div class="buttons" id="buttons">
+            <a :href="'http://wa.me/+91' + number">
+                <button type="button" id="button" class="btn btn-success"><i class="bi bi-whatsapp"></i>
+                    WhatsApp</button>
+            </a>
+        </div>
     </div>
 
-    <footer>
+    <footer class="mw-100">
         <div class="text-center text-white p-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
             style="background-color: rgba(0,0,0,0.8);   margin-top: auto;">Designed with ❤️ by Gopa Vasanth
         </div>
     </footer>
-
-    <script>
-        new Vue({
-            el: '#app',
-            data() {
-                return {
-                    number: ''
-                };
-            }
-        })
-
-        // let input = document.querySelector(".form-control");
-        // let button = document.querySelector(".btn");
-
-        // button.disabled = true; //setting button state to disabled
-
-        // input.addEventListener("change", stateHandle);
-
-        // function stateHandle() {
-        //     if (document.querySelector(".form-control").value === "") {
-        //         button.disabled = true; //button remains disabled
-        //     } else {
-        //         button.disabled = false; //button is enabled
-        //     }
-        // }
-        AOS.init();
-    </script>
-
-    <!-- Statcounter -->
-    <script type="text/javascript">
-        var sc_project = 12455714;
-        var sc_invisible = 1;
-        var sc_security = "83763bdd";
-        var sc_https = 1;
-    </script>
-    <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
-    <noscript>
-        <div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img
-                    class="statcounter" src="https://c.statcounter.com/12455714/0/83763bdd/1/" alt="Web Analytics"></a>
-        </div>
-    </noscript>
-    <!-- End of Statcounter Code -->
-
 </body>
 
 
@@ -113,6 +73,11 @@
         align-items: center;
     }
 
+    /* #AddToHomeScreenButton {
+        position: relative;
+        float: right;
+    } */
+
     h1 {
         color: #ffff;
         text-align: center;
@@ -125,9 +90,55 @@
 
     footer {
         position: absolute;
+        /* display: flex; */
+        flex-direction: row;
         bottom: 0;
         width: 100%;
     }
 </style>
+
+<script>
+    new Vue({
+        el: '#app',
+        data() {
+            return {
+                number: ''
+            };
+        }
+    })
+
+    if ('serviceWorker' in navigator) { navigator.serviceWorker.register('/service-worker.js') }
+    // let input = document.querySelector(".form-control");
+    // let button = document.querySelector(".btn");
+
+    // button.disabled = true; //setting button state to disabled
+
+    // input.addEventListener("change", stateHandle);
+
+    // function stateHandle() {
+    //     if (document.querySelector(".form-control").value === "") {
+    //         button.disabled = true; //button remains disabled
+    //     } else {
+    //         button.disabled = false; //button is enabled
+    //     }
+    // }
+    AOS.init();
+</script>
+
+<!-- Statcounter -->
+<script type="text/javascript">
+    var sc_project = 12455714;
+    var sc_invisible = 1;
+    var sc_security = "83763bdd";
+    var sc_https = 1;
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript>
+    <div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img
+                class="statcounter" src="https://c.statcounter.com/12455714/0/83763bdd/1/" alt="Web Analytics"></a>
+    </div>
+</noscript>
+<!-- End of Statcounter Code -->
+
 
 </html>

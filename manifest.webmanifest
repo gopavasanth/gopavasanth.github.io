@@ -1,0 +1,30 @@
+{
+    "background_color": "black",
+    "description": "Sends message in WhatsApp without saving contacts.",
+    "display": "none",
+    "icons": [
+        {
+            "src": "Images/WhatsApp.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "Images/WhatsApp.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        },
+        {
+            "src": "Images/WhatsApp.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "Images/WhatsApp.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        }
+    ],
+    "name": "WhatsApp Karo",
+    "short_name": "WhatsApp Karo",
+    "start_url": "/WhatsApp"
+}
