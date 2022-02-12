@@ -107,7 +107,7 @@
 </style>
 
 <script>
-    new Vue({
+    const app = Vue.createApp({
         el: '#app',
         data() {
             return {
@@ -115,8 +115,8 @@
             };
         }
     })
-
-    if ('serviceWorker' in navigator) { navigator.serviceWorker.register('/service-worker.js') }
+    app.mount('#app')
+    // if ('serviceWorker' in navigator) { navigator.serviceWorker.register('/service-worker.js') }
     // let input = document.querySelector(".form-control");
     // let button = document.querySelector(".btn");
 
