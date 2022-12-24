@@ -13,8 +13,6 @@ subclass: 'post tag-about'
 author: Gopa-Vasanth
 ---
 
-All About Me
-
 Hi! I’m Gopa Vasanth, pursuing final year in Computer Science and Engineering from [Amrita Vishwa Vidyapeetham](amrita.edu), India. I’m an active member of the Open Source student club [FOSS@Amrita](amfoss.in). I also contribute to Free and Open Source software projects and have been actively contributing Wikimedia technical projects since 2017.
 
 **Technically**, I got selected for the Google Summer of Code 2019 program in my second year,which produced a handy tool – ​ VideoCutTool ​ for Wikimedia Foundation. I was also a part of “Mediawiki: Extension: RevisionSlider” development at “Season of RevisionSlider” after this project we successfully released RevisionSlider version 0.1 and now this is live in more than 700 of the production wikis of Wikimedia Foundation after several rounds of testing and checks. The extension helps the reviewers of Wikipedia using a friendly slider.
