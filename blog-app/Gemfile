@@ -7,3 +7,7 @@ gem "rake", "~> 12.3.0"
 group :jekyll_plugins do
   gem 'jekyll-algolia'
 end
+
+gem "webrick", "~> 1.7"
+
+gem "rexml", "~> 3.2"
