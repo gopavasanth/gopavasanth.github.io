@@ -1,0 +1,80 @@
+[
+    {
+      "name": "Team up",
+      "url": "https://sap-teamup.netlify.app/",
+      "image": "Images/teamup.png",
+      "tags": ["reactjs", "hackathon"],
+      "description": "Teamup - A crowdsourcing platform to collaborate, participate, build, network, learn, unite, and enjoy! Here you can find your peers who can collaborate and join with you in any event, hackathon, sports, projects, dinner and much more!"
+    },
+    {
+      "name": "Season of RevisionSlider",
+      "url": "https://phabricator.wikimedia.org/project/profile/3498/",
+      "image": "Images/RevisionSlider.png",
+      "tags": ["mediawiki extension", "jquery"],
+      "description": "The RevisionSlider is a MediaWiki extension, It adds a slider to the diff page that allows to easily navigate through revisions."
+    },
+    {
+      "name": "VideoCutTool",
+      "url": "https://videocuttool.wmflabs.org/",
+      "image": "Images/VideoCutTool1.png",
+      "tags": ["wikimedia", "mern stack"],
+      "description": "Tool to cut and trim videos in Wikimedia Commons. More info at https://commons.wikimedia.org/wiki/Commons:VideoCutTool"
+    },
+    {
+      "name": "Flick - A short video application",
+      "url": "https://play.google.com/store/apps/details?id=com.nishanth.flick",
+      "image": "Images/flickapp.png",
+      "tags": ["flutter", "azure"],
+      "description": "Indian application to entertain the masses."
+    },
+    {
+      "name": "dShop Inventory Application",
+      "url": "https://sliachieve-sliapps-d-shop.cfapps.sap.hana.ondemand.com/",
+      "image": "Images/dshop.png",
+      "tags": ["sap cap", "nodejs"],
+      "description": "Dshop Inventory management tool allows SAP colleagues and other community members to request the devices in an easy and simple way, This helps dshop admins to easily manage the catalog."
+    },
+    {
+      "name": "Phishing Detection using SHAP",
+      "url": "https://github.com/gopavasanth/Phishing-Detection-Analysis-using-SHAP",
+      "image": "Images/pd-shap.jpeg",
+      "tags": ["data mining", "cybersecurity"],
+      "description": "Build a system that helps in explaining why some domains are malicious. An analysis using SHAP and identifying the most important features contributing to the URL being malicious."
+    },
+    {
+      "name": "Distributed Readers Writers",
+      "url": "https://github.com/gopavasanth/distributedReadersWriters",
+      "image": "Images/drw.webp",
+      "tags": ["distributed systems", "java"],
+      "description": "Built a model for the readers-writers problem and implemented using Java Remote Method Invocation."
+    },
+    {
+      "name": "SLara App - Sign Language Reader Application",
+      "url": "https://drive.google.com/file/d/1Q371sTNbmGa3xRvW67g2KhzSi6N0WUNK/view?usp=sharing",
+      "image": "Images/slara.jpg",
+      "tags": ["ml", "java"],
+      "description": "Mobile app that can recognize Indian sign language and read out loud to help people with hearing impairments communicate efficiently with others who don’t know sign language."
+    },
+    {
+      "name": "Forex Forecaster",
+      "url": "",
+      "image": "Images/Forex.png",
+      "tags": ["ml", "reactjs"],
+      "description": "Support SAP customers to hedge currency at the best rates by providing them with a predictive tool that helps them time hedging for maximum profitability."
+    },
+    {
+      "name": "Kottayam House Boat Database Management System",
+      "url": "https://docs.google.com/document/d/e/2PACX-1vTskV4CO2ZWFpZ_Vh-qWcB1vxTux3ZzMwpJRQn-Hhvb9K6D4o82e2vQYuTWzsF3ryJHRXJ4sBb94B6A/pub",
+      "image": "Images/dbms.png",
+      "tags": ["dbms", "sql"],
+      "description": "A PostgreSQL-based application for managing houseboats. The project maintains records of each boat, routes, customers, and owners, and supports all other related queries."
+    },
+    {
+      "name": "WhatsApp Karo",
+      "url": "/WhatsApp.html",
+      "image": "Images/WhatsAppKaro.jpeg",
+      "tags": ["vue.js", "css"],
+      "description": "Users can send messages on WhatsApp without saving contacts."
+    }
+  ]
+  
