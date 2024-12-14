@@ -251,17 +251,7 @@
     <!-- Home Section END -->
 
     <!-- Footer -->
-    <!-- <footer id="footer-container"></footer> -->
-    <!-- <div id="footer"></div> -->
     <div id="footer"></div>
-    <script>
-      fetch("footer.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("footer").innerHTML = data;
-        })
-        .catch((error) => console.error("Error loading footer:", error));
-    </script>
 
     <!-- Statcounter -->
     <script type="text/javascript">
@@ -288,30 +278,34 @@
     <!-- End of Statcounter Code -->
 
     <!-- Initialize Animation -->
-    <!-- <script>
+    <script>
+      // Initialize AOS
       AOS.init();
-      $(function () {
-        $("#header").load("header.html");
-        $("#footer").load("footer.html");
-      });
-      fetch("footer.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("footer-container").innerHTML = data;
-          // Call your last-updated logic after footer is loaded
-          const lastUpdatedElement = document.getElementById("last-updated");
-          fetch(
-            "https://api.github.com/repos/gopavasanth/gopavasanth.github.io/commits"
-          )
-            .then((response) => response.json())
-            .then((commits) => {
-              const lastCommitDate = new Date(commits[0].commit.author.date);
-              lastUpdatedElement.innerText = `Last updated on: ${lastCommitDate.toDateString()}`;
-            });
-        });
 
-      fetchLastUpdated();
-    </script> -->
+      // Load the footer using jQuery's .load() method
+      $(function () {
+        $("#footer").load("footer.html", function () {
+          // Footer loaded, now load the last updated commit info
+          fetchLastUpdated();
+        });
+      });
+      // Function to fetch the last updated commit date from GitHub
+      function fetchLastUpdated() {
+        const lastUpdatedElement = document.getElementById("last-updated");
+
+        fetch(
+          "https://api.github.com/repos/gopavasanth/gopavasanth.github.io/commits"
+        )
+          .then((response) => response.json())
+          .then((commits) => {
+            const lastCommitDate = new Date(commits[0].commit.author.date);
+            lastUpdatedElement.innerText = `Last updated on: ${lastCommitDate.toDateString()}`;
+          })
+          .catch((error) =>
+            console.error("Error fetching commit data:", error)
+          );
+      }
+    </script>
     <script src="js/main.js"></script>
   </body>
 </html>
