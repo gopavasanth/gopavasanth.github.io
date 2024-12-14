@@ -144,7 +144,7 @@
             data-toggle="collapse"
             data-target=".navbar-collapse.show"
           >
-            <a class="nav-link" href="/projects.html" style="color: #ffffff"
+            <a class="nav-link" href="projects.html" style="color: #ffffff"
               >Projects</a
             >
           </li>
@@ -182,15 +182,17 @@
 
       <div class="cd-intro m-3 text-center">
         <h4 class="cd-headline slide">
-          <span class="cd-words-wrapper" style="width: 200px !important">
+          <span class="cd-words-wrapper" style="max-width: 100%; width: auto">
             <b class="is-visible">❤️ Wikimedia</b>
+            <b>💼 American Express</b>
+            <b>💙 Ex-SAPian</b>
+            <b>💻 Software Developer</b>
             <b>😍 Open Source</b>
             <b>☁️ Azure</b>
             <b>✈️ JavaScript</b>
             <b>👨🏻‍💻 Enthusiast</b>
             <b>✍️ Blogger</b>
             <b>🇮🇳 Indian</b>
-            <b>💻 SAP</b>
           </span>
         </h4>
       </div>
@@ -249,16 +251,17 @@
     <!-- Home Section END -->
 
     <!-- Footer -->
-    <footer class="m-3 mx-auto">
-      <div
-        class="text-center text-white p-3"
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom"
-        style="background-color: rgba(0, 0, 0, 0.8)"
-      >
-        Designed with ❤️ by Gopa Vasanth
-      </div>
-    </footer>
+    <!-- <footer id="footer-container"></footer> -->
+    <!-- <div id="footer"></div> -->
+    <div id="footer"></div>
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading footer:", error));
+    </script>
 
     <!-- Statcounter -->
     <script type="text/javascript">
@@ -285,9 +288,30 @@
     <!-- End of Statcounter Code -->
 
     <!-- Initialize Animation -->
-    <script>
+    <!-- <script>
       AOS.init();
-    </script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-container").innerHTML = data;
+          // Call your last-updated logic after footer is loaded
+          const lastUpdatedElement = document.getElementById("last-updated");
+          fetch(
+            "https://api.github.com/repos/gopavasanth/gopavasanth.github.io/commits"
+          )
+            .then((response) => response.json())
+            .then((commits) => {
+              const lastCommitDate = new Date(commits[0].commit.author.date);
+              lastUpdatedElement.innerText = `Last updated on: ${lastCommitDate.toDateString()}`;
+            });
+        });
+
+      fetchLastUpdated();
+    </script> -->
     <script src="js/main.js"></script>
   </body>
 </html>
