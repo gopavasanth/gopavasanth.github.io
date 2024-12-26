@@ -18,14 +18,14 @@
     </div>
     <a
       class="floating-header-share-tw"
-      href="https://twitter.com/share?text={{ page.title | url_encode }}&amp;url={{ site.production_url }}{{ page.url | remove_first: '/' }}"
+      href="https://twitter.com/share?text=Check%20out%20this%20awesome%20blog%20on%20{{ page.title | url_encode }}!%20Read%20more%20here:%20{{ site.production_url }}{{ page.url | remove_first: '/' }}"
       onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;"
     >
       {% include twitter.html %}
     </a>
     <a
       class="floating-header-share-fb"
-      href="https://www.facebook.com/sharer/sharer.php?u={{ site.production_url }}{{ page.url | remove_first: '/' }}"
+      href="https://www.facebook.com/sharer/sharer.php?u={{ site.production_url }}{{ page.url | remove_first: '/' }}&quote=Check%20out%20this%20amazing%20blog%20on%20{{ page.title | url_encode }}!"
       onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;"
     >
       {% include facebook.html %}
