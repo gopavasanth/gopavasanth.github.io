@@ -3,11 +3,10 @@ layout: page
 current: about
 title: About
 navigation: true
-logo: 'assets/images/Gopa.jpg'
+logo: "assets/images/Gopa.jpg"
 class: page-template
-subclass: 'post page'
+subclass: "post page"
 ---
-
 
 Hi! I’m Gopa Vasanth, pursuing final year in Computer Science and Engineering from [Amrita Vishwa Vidyapeetham](amrita.edu), India. I’m an active member of the Open Source student club [FOSS@Amrita](amfoss.in). I also contribute to Free and Open Source software projects and have been actively contributing Wikimedia technical projects since 2017.
 
@@ -17,4 +16,4 @@ In 2019, I could be as Administrator come mentor the development of VideoCutTool
 
 **Internationally** , I got the privilege of attending the Wikimedia annual developer conference at Prague, Czech Republic and as part of my extra-academic activities at our university Open Source club, which added to my experience. In my third year, I got a scholarship to attend a one-month Data Mining and Business Intelligence for Cyber Security course with the Ben-Gurion University in Israel which made me excited about the academia and performa of foreign universities.
 
->Exploring, Experimenting, and Enjoying the little Experiences 💫! - Gopa Vasanth
+> Exploring, Experimenting, and Enjoying the little Experiences 💫! - Gopa Vasanth
