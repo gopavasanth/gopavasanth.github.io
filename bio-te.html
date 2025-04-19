@@ -109,12 +109,14 @@
       }
 
       /* Scrollable image gallery */
+      /* Scrollable image gallery */
       .photo-scroll {
         display: flex;
         overflow-x: auto;
         gap: 15px;
         padding-bottom: 10px;
         scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch; /* For smoother scrolling on iOS */
       }
 
       .photo-scroll img {
@@ -122,11 +124,23 @@
         border-radius: 10px;
         flex-shrink: 0;
         transition: transform 0.3s ease;
-        max-width: 100%;
+        max-width: none; /* Ensure images are not constrained */
+        object-fit: cover; /* Ensure image quality stays intact */
       }
 
-      .photo-scroll img:hover {
-        transform: scale(1.05);
+      /* Mobile responsiveness */
+      @media (max-width: 600px) {
+        .photo-scroll {
+          gap: 20px; /* Increased gap for mobile view */
+          padding: 10px 0;
+          justify-content: flex-start; /* Align images at the start */
+          flex-wrap: nowrap; /* Prevent images from wrapping */
+        }
+
+        .photo-scroll img {
+          height: 250px; /* Adjust image height to fit better */
+          margin-right: 15px; /* Space between images */
+        }
       }
 
       .icons {
