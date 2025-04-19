@@ -55,6 +55,7 @@
         position: absolute;
         top: 20px;
         right: 20px;
+        z-index: 10;
       }
 
       .lang-switch a {
@@ -63,6 +64,22 @@
         padding: 10px 20px;
         border-radius: 5px;
         text-decoration: none;
+        font-size: 16px;
+        display: inline-block;
+        white-space: nowrap; /* Prevent text from wrapping */
+      }
+
+      /* Mobile responsiveness */
+      @media (max-width: 600px) {
+        .lang-switch {
+          top: 10px;
+          right: 10px;
+        }
+
+        .lang-switch a {
+          padding: 8px 16px;
+          font-size: 14px; /* Adjust font size for better readability */
+        }
       }
 
       h1,
@@ -212,20 +229,18 @@
         </div>
         <div class="info"><label>రాశి:</label> <span>వృషభ</span></div>
         <div class="info"><label>నక్షత్రం:</label> <span>రోహిణి</span></div>
-        <div class="info"><label>స్వగోత్రం:</label> <span>మేడునకుల</span></div>
+        <div class="info"><label>స్వగోత్రం:</label> <span>మిధునకుల</span></div>
         <div class="info">
-          <label>తల్లి గోత్రం:</label> <span>భూదనకుల</span>
+          <label>మేనమామ గోత్రం:</label> <span>భూదనకుల</span>
         </div>
-        <div class="info">
-          <label>ఎత్తు:</label> <span>5 అడుగులు 11 అంగుళాలు</span>
-        </div>
-        <div class="info"><label>చర్మం:</label> <span>తెల్లటి</span></div>
+        <div class="info"><label>ఎత్తు:</label> <span>5'10 </span></div>
+        <div class="info"><label>చర్మం:</label> <span>న్యాయమైన</span></div>
       </div>
 
       <div class="section">
         <h3>విద్య</h3>
         <div class="info">
-          <label>అత్యున్నత విద్య:</label> <span>బీఈ కంప్యూటర్ సైన్స్</span>
+          <label>అత్యున్నత విద్య:</label> <span>బీటెక్ కంప్యూటర్ సైన్స్</span>
         </div>
         <div class="info">
           <label>విశ్వవిద్యాలయం:</label> <span>అమృత విశ్వ విద్యాపీఠం</span>
@@ -269,7 +284,7 @@
           <span><a href="tel:9440290461">9440290461</a></span>
         </div>
         <div class="info">
-          <label>ఫోన్ (తల్లి బావ):</label>
+          <label>ఫోన్ (మేనమామ):</label>
           <span><a href="tel:9440333983">9440333983</a></span>
         </div>
       </div>
