@@ -3,52 +3,113 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vasanth Gopa - Marriage Bio</title>
+    <title>Vasanth Gopa - Marriage Biodata</title>
 
-    <!-- Open Graph Meta Tags for Link Preview -->
-    <meta property="og:title" content="Vasanth Gopa - Marriage Bio" />
-    <meta
-      property="og:description"
-      content="The bio you’ve been waiting for: Get a sneak peek into the life of Vasanth Gopa!"
-    />
-    <meta
-      property="og:image"
-      content="https://gopavasanth.github.io/Images/personal/dp.JPG"
-    />
-    <meta property="og:url" content="https://gopavasanth.github.io/bio" />
-    <meta property="og:type" content="website" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Vasanth Gopa - Marriage Bio" />
-    <meta
-      name="twitter:description"
-      content="The bio you’ve been waiting for: Get a sneak peek into the life of Vasanth Gopa!"
-    />
-    <meta
-      name="twitter:image"
-      content="https://gopavasanth.github.io/Images/personal/dp.JPG"
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;500;600&family=Great+Vibes&display=swap"
+      rel="stylesheet"
     />
 
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background: linear-gradient(to right, #f3f4f6, #e0f7fa);
+      :root {
+        --gold: #d4af37;
+        --maroon: #800020;
+        --cream: #fff8e7;
+        --dark-text: #333;
+        --light-text: #666;
+      }
+
+      * {
+        box-sizing: border-box;
         margin: 0;
-        padding: 20px;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: var(--cream);
+        color: var(--dark-text);
+        line-height: 1.6;
+        background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png");
       }
 
       .container {
+        max-width: 900px;
+        margin: 2rem auto;
+        background: white;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
         position: relative;
-        max-width: 850px;
-        margin: auto;
-        background: #ffffff;
-        border-radius: 15px;
-        padding: 30px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        border-top: 5px solid var(--gold);
+      }
+
+      .header {
+        text-align: center;
+        padding: 2.5rem 2rem;
+        position: relative;
+        background: linear-gradient(
+            rgba(255, 255, 255, 0.9),
+            rgba(255, 255, 255, 0.9)
+          ),
+          url("https://www.transparenttextures.com/patterns/rice-paper.png");
+      }
+
+      .header::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 2px;
+        background: var(--gold);
+      }
+
+      .profile-pic-container {
+        width: 180px;
+        height: 180px;
+        margin: 0 auto 1.5rem;
+        border: 5px solid white;
+        border-radius: 50%;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        position: relative;
+      }
+
+      .profile-pic {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .profile-pic-container:hover .profile-pic {
+        transform: scale(1.05);
+      }
+
+      h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 2.8rem;
+        color: var(--maroon);
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+      }
+
+      .subtitle {
+        font-family: "Great Vibes", cursive;
+        font-size: 1.8rem;
+        color: var(--gold);
+        margin-bottom: 1rem;
       }
 
       .lang-switch {
@@ -59,292 +120,596 @@
       }
 
       .lang-switch a {
-        background-color: #0077b5;
+        background-color: var(--maroon);
         color: white;
-        padding: 10px 20px;
-        border-radius: 5px;
+        padding: 8px 15px;
+        border-radius: 30px;
         text-decoration: none;
-        font-size: 16px;
-        display: inline-block;
-        white-space: nowrap; /* Prevent text from wrapping */
+        font-size: 14px;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        transition: all 0.3s ease;
       }
 
-      /* Mobile responsiveness */
-      @media (max-width: 600px) {
-        .lang-switch {
-          top: 10px;
-          right: 10px;
-        }
-
-        .lang-switch a {
-          padding: 8px 16px;
-          font-size: 14px; /* Adjust font size for better readability */
-        }
+      .lang-switch a:hover {
+        background-color: var(--gold);
+        color: var(--maroon);
       }
 
-      h1,
-      h2 {
-        text-align: center;
-        color: #333;
-      }
-
-      h3 {
-        color: #333;
+      .content {
+        padding: 0 2rem 2rem;
       }
 
       .section {
-        margin-bottom: 30px;
+        margin-bottom: 2.5rem;
       }
 
-      .section h3 {
-        border-bottom: 2px solid #ddd;
-        padding-bottom: 5px;
-        margin-bottom: 15px;
-        color: #444;
+      .section-title {
+        font-family: "Playfair Display", serif;
+        font-size: 1.8rem;
+        color: var(--maroon);
+        margin-bottom: 1.5rem;
+        position: relative;
+        padding-bottom: 10px;
+        text-align: center;
       }
 
-      .info {
+      .section-title::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 2px;
+        background: var(--gold);
+      }
+
+      .info-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .info-item {
+        margin-bottom: 1.2rem;
+      }
+
+      .info-label {
+        font-weight: 600;
+        color: var(--maroon);
+        margin-bottom: 0.3rem;
         display: flex;
-        justify-content: space-between;
-        margin: 5px 0;
+        align-items: center;
+        gap: 8px;
       }
 
-      .info label {
-        font-weight: bold;
-        color: #555;
-        flex: 1;
+      .info-label i {
+        color: var(--gold);
+        width: 20px;
+        text-align: center;
       }
 
-      /* Circular profile image */
-      .profile-pic {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin: 0 auto 20px;
-        display: block;
+      .info-value {
+        padding-left: 28px;
+        color: var(--dark-text);
       }
 
-      /* Scrollable image gallery */
-      /* Scrollable image gallery */
+      .horoscope-container {
+        background: rgba(212, 175, 55, 0.1);
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin-top: 1.5rem;
+        border: 1px dashed var(--gold);
+      }
+
+      .horoscope-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 1rem;
+        text-align: center;
+      }
+
+      .horoscope-item {
+        padding: 0.8rem;
+      }
+
+      .horoscope-label {
+        font-size: 0.9rem;
+        color: var(--light-text);
+        margin-bottom: 0.3rem;
+      }
+
+      .horoscope-value {
+        font-weight: 600;
+        color: var(--maroon);
+        font-size: 1.1rem;
+      }
+
+      /* Family & Education Grid */
+      .family-edu-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+
+      .info-card {
+        background: rgba(255, 255, 255, 0.8);
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      /* Horizontal Scrollable Gallery */
+      .photo-scroll-container {
+        position: relative;
+        margin: 1.5rem 0;
+      }
+
       .photo-scroll {
         display: flex;
         overflow-x: auto;
-        gap: 15px;
-        padding-bottom: 10px;
-        scroll-behavior: smooth;
-        -webkit-overflow-scrolling: touch; /* For smoother scrolling on iOS */
+        scroll-snap-type: x mandatory;
+        gap: 1rem;
+        padding: 1rem 0;
+        scrollbar-width: none; /* Hide scrollbar for Firefox */
+        -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
       }
 
-      .photo-scroll img {
+      .photo-scroll::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for Chrome/Safari */
+      }
+
+      .photo-item {
+        scroll-snap-align: start;
+        flex: 0 0 auto;
+        width: 250px;
         height: 300px;
-        border-radius: 10px;
-        flex-shrink: 0;
-        transition: transform 0.3s ease;
-        max-width: none; /* Ensure images are not constrained */
-        object-fit: cover; /* Ensure image quality stays intact */
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        position: relative;
       }
 
-      /* Mobile responsiveness */
-      @media (max-width: 600px) {
-        .photo-scroll {
-          gap: 20px; /* Increased gap for mobile view */
-          padding: 10px 0;
-          justify-content: flex-start; /* Align images at the start */
-          flex-wrap: nowrap; /* Prevent images from wrapping */
-        }
-
-        .photo-scroll img {
-          height: 250px; /* Adjust image height to fit better */
-          margin-right: 15px; /* Space between images */
-        }
+      .photo-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
       }
 
-      .icons {
+      .photo-item:hover {
+        transform: scale(1.03);
+      }
+
+      .photo-item:hover img {
+        transform: scale(1.1);
+      }
+
+      /* Scroll indicators */
+      .scroll-indicator {
         text-align: center;
-        margin: 20px 0;
+        margin-top: 0.5rem;
+        color: var(--light-text);
+        font-size: 0.9rem;
       }
 
-      .icons a {
-        margin: 0 10px;
-        font-size: 26px;
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      .social-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: var(--maroon);
+        color: white;
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
         text-decoration: none;
       }
 
-      .icons a.linkedin {
-        color: #0077b5;
+      .social-link:hover {
+        background: var(--gold);
+        color: var(--maroon);
+        transform: scale(1.1);
       }
 
-      .icons a.instagram {
-        color: #e1306c;
+      .footer {
+        text-align: center;
+        padding: 1.5rem;
+        background: var(--maroon);
+        color: white;
+        font-size: 0.9rem;
       }
 
-      /* Mobile responsiveness */
-      @media (max-width: 600px) {
+      .footer a {
+        color: var(--gold);
+        text-decoration: none;
+      }
+
+      /* Traditional decorative elements */
+      .corner-decoration {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        opacity: 0.1;
+      }
+
+      .top-left {
+        top: 10px;
+        left: 10px;
+        border-top: 2px solid var(--maroon);
+        border-left: 2px solid var(--maroon);
+      }
+
+      .top-right {
+        top: 10px;
+        right: 10px;
+        border-top: 2px solid var(--maroon);
+        border-right: 2px solid var(--maroon);
+      }
+
+      .bottom-left {
+        bottom: 10px;
+        left: 10px;
+        border-bottom: 2px solid var(--maroon);
+        border-left: 2px solid var(--maroon);
+      }
+
+      .bottom-right {
+        bottom: 10px;
+        right: 10px;
+        border-bottom: 2px solid var(--maroon);
+        border-right: 2px solid var(--maroon);
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
         .container {
-          padding: 20px;
+          margin: 1rem;
+          border-radius: 5px;
         }
 
-        h1,
-        h2 {
-          font-size: 24px;
+        .header {
+          padding: 2rem 1rem;
         }
 
-        h3 {
-          font-size: 20px;
+        h1 {
+          font-size: 2.2rem;
         }
 
-        .info {
-          flex-direction: column;
-          align-items: flex-start;
+        .subtitle {
+          font-size: 1.5rem;
         }
 
-        .photo-scroll img {
-          height: 200px;
+        .profile-pic-container {
+          width: 150px;
+          height: 150px;
         }
 
-        .icons a {
-          font-size: 22px;
+        .content {
+          padding: 0 1.5rem 1.5rem;
+        }
+
+        .section-title {
+          font-size: 1.6rem;
+        }
+
+        .lang-switch {
+          position: relative;
+          top: auto;
+          right: auto;
+          margin-bottom: 1rem;
+          display: flex;
+          justify-content: center;
+        }
+
+        .photo-item {
+          width: 220px;
+          height: 280px;
+        }
+
+        .family-edu-grid {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .header {
+          padding: 1.5rem 1rem;
+        }
+
+        h1 {
+          font-size: 1.8rem;
+        }
+
+        .subtitle {
+          font-size: 1.3rem;
+        }
+
+        .profile-pic-container {
+          width: 130px;
+          height: 130px;
+        }
+
+        .section-title {
+          font-size: 1.4rem;
+        }
+
+        .photo-item {
+          width: 180px;
+          height: 240px;
+        }
+
+        .social-links {
+          gap: 1rem;
+        }
+
+        .horoscope-grid {
+          grid-template-columns: 1fr 1fr;
         }
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <!-- Profile Picture -->
-      <img
-        src="Images/personal/dp.JPG"
-        alt="Vasanth Gopa"
-        class="profile-pic"
-      />
+      <!-- Decorative corners -->
+      <div class="corner-decoration top-left"></div>
+      <div class="corner-decoration top-right"></div>
+      <div class="corner-decoration bottom-left"></div>
+      <div class="corner-decoration bottom-right"></div>
 
-      <div class="lang-switch">
-        <a href="bio-te.html">తెలుగు వెర్షన్</a>
+      <!-- Header Section -->
+      <div class="header">
+        <div class="lang-switch">
+          <a href="bio-te.html"><i class="fas fa-language"></i> తెలుగు</a>
+        </div>
+
+        <div class="profile-pic-container">
+          <img
+            src="Images/personal/dp.JPG"
+            alt="Vasanth Gopa"
+            class="profile-pic"
+          />
+        </div>
+
+        <h1>Vasanth Gopa</h1>
+        <div class="subtitle">Blessed with Good Family Values</div>
       </div>
 
-      <h1>Vasanth Gopa</h1>
+      <!-- Main Content -->
+      <div class="content">
+        <!-- Personal Details Section -->
+        <div class="section">
+          <h2 class="section-title">Personal Details</h2>
+          <div class="info-grid">
+            <div class="info-item">
+              <div class="info-label">
+                <i class="fas fa-birthday-cake"></i> Date of Birth
+              </div>
+              <div class="info-value">30th September 1999</div>
+            </div>
 
-      <div class="section">
-        <h3>Personal Info</h3>
-        <div class="info"><label>DOB:</label> <span>30th Sep 1999</span></div>
-        <div class="info">
-          <label>Time:</label> <span>8:10 AM (Kurnool)</span>
+            <div class="info-item">
+              <div class="info-label">
+                <i class="fas fa-clock"></i> Time of Birth
+              </div>
+              <div class="info-value">8:10 AM (Kurnool)</div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-label">
+                <i class="fas fa-ruler-vertical"></i> Height
+              </div>
+              <div class="info-value">5 feet 10 inches</div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-label">
+                <i class="fas fa-palette"></i> Skin tone
+              </div>
+              <div class="info-value">Fair</div>
+            </div>
+          </div>
+
+          <div class="horoscope-container">
+            <div class="horoscope-grid">
+              <div class="horoscope-item">
+                <div class="horoscope-label">Rasi</div>
+                <div class="horoscope-value">Vrushabha</div>
+              </div>
+
+              <div class="horoscope-item">
+                <div class="horoscope-label">Nakshathra</div>
+                <div class="horoscope-value">Rohini</div>
+              </div>
+
+              <div class="horoscope-item">
+                <div class="horoscope-label">Swagothram</div>
+                <div class="horoscope-value">Medunakula</div>
+              </div>
+
+              <div class="horoscope-item">
+                <div class="horoscope-label">Maternal Gothram</div>
+                <div class="horoscope-value">Bhudanakula</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="info"><label>Rasi:</label> <span>Vrushabha</span></div>
-        <div class="info"><label>Nakshathra:</label> <span>Rohini</span></div>
-        <div class="info">
-          <label>Swagothram:</label> <span>Medunakula</span>
+
+        <!-- Family & Education Section -->
+        <div class="section">
+          <div class="family-edu-grid">
+            <!-- Family Card -->
+            <div class="info-card">
+              <h2 class="section-title">Family Background</h2>
+              <div class="info-item">
+                <div class="info-label"><i class="fas fa-male"></i> Father</div>
+                <div class="info-value">Jaya Prakash Gopa</div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-label">
+                  <i class="fas fa-female"></i> Mother
+                </div>
+                <div class="info-value">Vijaya Lakshmi Gopa</div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-label">
+                  <i class="fas fa-users"></i> Siblings
+                </div>
+                <div class="info-value">Only Child</div>
+              </div>
+            </div>
+
+            <!-- Education Card -->
+            <div class="info-card">
+              <h2 class="section-title">Education & Career</h2>
+              <div class="info-item">
+                <div class="info-label">
+                  <i class="fas fa-graduation-cap"></i> Education
+                </div>
+                <div class="info-value">
+                  B.Tech in Computer Science<br />Amrita Vishwa Vidyapeetham
+                  (2021)
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-label">
+                  <i class="fas fa-briefcase"></i> Profession
+                </div>
+                <div class="info-value">
+                  Software Engineer<br />
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/f/fa/American_Express_logo_%282018%29.svg"
+                    alt="Amex Logo"
+                    style="
+                      height: 20px;
+                      vertical-align: middle;
+                      margin-right: 5px;
+                    "
+                  />
+                  American Express, Bangalore
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="info">
-          <label>Maternal Gothram:</label> <span>Bhudanakula</span>
+
+        <!-- Contact Information -->
+        <div class="section">
+          <h2 class="section-title">Contact Information</h2>
+          <div class="info-grid">
+            <div class="info-item">
+              <div class="info-label"><i class="fas fa-home"></i> Address</div>
+              <div class="info-value">
+                25/598, Sreenivasa Nagar, Nandyal, Andhrapradesh, 518501
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-label">
+                <i class="fas fa-phone"></i> Father's Contact
+              </div>
+              <div class="info-value">
+                Gopa Jaya Prakash, Nandyal<br />
+                <a
+                  href="tel:+919440290461"
+                  style="color: inherit; text-decoration: none"
+                  >9440290461</a
+                >
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-label">
+                <i class="fas fa-phone-alt"></i> Maternal Uncle
+              </div>
+              <div class="info-value">
+                Batchu Suresh Kumar, Dhone<br />
+                <a
+                  href="tel:+919440333983"
+                  style="color: inherit; text-decoration: none"
+                  >9440333983</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="info"><label>Height:</label> <span>5'10</span></div>
-        <div class="info"><label>Complexion:</label> <span>Fair</span></div>
+
+        <!-- Horizontal Scrollable Photo Gallery -->
+        <div class="section">
+          <h2 class="section-title">Gallery</h2>
+          <div class="photo-scroll-container">
+            <div class="photo-scroll">
+              <div class="photo-item">
+                <img src="Images/personal/pic5.jpg" alt="Vasanth Gopa" />
+              </div>
+              <div class="photo-item">
+                <img src="Images/personal/pic6.jpg" alt="Vasanth Gopa" />
+              </div>
+              <div class="photo-item">
+                <img src="Images/personal/pic7.jpg" alt="Vasanth Gopa" />
+              </div>
+              <div class="photo-item">
+                <img src="Images/personal/pic8.jpg" alt="Vasanth Gopa" />
+              </div>
+              <div class="photo-item">
+                <img src="Images/personal/pic9.jpg" alt="Vasanth Gopa" />
+              </div>
+              <div class="photo-item">
+                <img src="Images/personal/pic1.jpeg" alt="Vasanth Gopa" />
+              </div>
+              <div class="photo-item">
+                <img src="Images/personal/pic2.jpeg" alt="Vasanth Gopa" />
+              </div>
+            </div>
+            <div class="scroll-indicator">← Scroll to view more →</div>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="section">
+          <h2 class="section-title">Connect With Me</h2>
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/gopa-vasanth/"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/gopavasanth/"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
       </div>
 
-      <div class="section">
-        <h3>Education</h3>
-        <div class="info">
-          <label>Highest Degree:</label> <span>Bachelor’s in CSE</span>
-        </div>
-        <div class="info">
-          <label>University:</label> <span>Amrita Vishwa Vidyapeetham</span>
-        </div>
-        <div class="info">
-          <label>Graduation Year:</label> <span>2021</span>
-        </div>
-      </div>
-
-      <div class="section">
-        <h3>Career</h3>
-        <div class="info">
-          <label>Job:</label> <span>Software Engineer</span>
-        </div>
-        <div class="info">
-          <label>Company:</label> <span>American Express</span>
-        </div>
-        <div class="info">
-          <label>Location:</label> <span>Bangalore, India</span>
-        </div>
-      </div>
-
-      <div class="section">
-        <h3>Family</h3>
-        <div class="info">
-          <label>Father:</label> <span>Jaya Prakash Gopa</span>
-        </div>
-        <div class="info">
-          <label>Mother:</label> <span>Vijaya Lakshmi Gopa</span>
-        </div>
-        <div class="info"><label>Siblings:</label> <span>No</span></div>
-      </div>
-
-      <div class="section">
-        <h3>Contact Info</h3>
-        <div class="info">
-          <label>Address:</label> <span>25/598, Sreenivasa Nagar, Nandyal</span>
-        </div>
-        <div class="info">
-          <label>Phone (Father):</label>
-          <span><a href="tel:+919440290461">9440290461</a></span>
-        </div>
-        <div class="info">
-          <label>Phone (Maternal Uncle):</label>
-          <span><a href="tel:+919440333983">9440333983</a></span>
-        </div>
-      </div>
-
-      <div class="section">
-        <h3>Photos</h3>
-        <div class="photo-scroll">
-          <!-- <a href="Images/personal/pic3.jpeg" target="_blank"
-            ><img src="Images/personal/pic3.jpeg" alt="Photo 3"
-          /></a> -->
-          <!-- <a href="Images/personal/pic4.jpeg" target="_blank"
-            ><img src="Images/personal/pic4.jpeg" alt="Photo 4"
-          /></a> -->
-          <a href="Images/personal/pic5.jpg" target="_blank"
-            ><img src="Images/personal/pic5.jpg" alt="Photo 4"
-          /></a>
-          <a href="Images/personal/pic6.jpg" target="_blank"
-            ><img src="Images/personal/pic6.jpg" alt="Photo 4"
-          /></a>
-          <a href="Images/personal/pic7.jpg" target="_blank"
-            ><img src="Images/personal/pic7.jpg" alt="Photo 4"
-          /></a>
-          <a href="Images/personal/pic8.jpg" target="_blank"
-            ><img src="Images/personal/pic8.jpg" alt="Photo 4"
-          /></a>
-          <a href="Images/personal/pic9.jpg" target="_blank"
-            ><img src="Images/personal/pic9.jpg" alt="Photo 4"
-          /></a>
-          <a href="Images/personal/pic1.jpeg" target="_blank"
-            ><img src="Images/personal/pic1.jpeg" alt="Photo 1"
-          /></a>
-          <a href="Images/personal/pic2.jpeg" target="_blank"
-            ><img src="Images/personal/pic2.jpeg" alt="Photo 2"
-          /></a>
-        </div>
-      </div>
-
-      <div class="section">
-        <h3>Social Profiles</h3>
-        <div class="icons">
-          <a
-            href="https://www.linkedin.com/in/gopa-vasanth/"
-            target="_blank"
-            class="linkedin"
-          >
-            <i class="fab fa-linkedin"></i> LinkedIn
-          </a>
-          <a
-            href="https://www.instagram.com/gopavasanth/"
-            target="_blank"
-            class="instagram"
-          >
-            <i class="fab fa-instagram"></i> Instagram
-          </a>
-        </div>
+      <!-- Footer -->
+      <div class="footer">
+        <p>For more details, please contact the family members</p>
+        <p>
+          Created with
+          <i class="fas fa-heart" style="color: var(--gold)"></i> by Vasanth
+        </p>
       </div>
     </div>
 
