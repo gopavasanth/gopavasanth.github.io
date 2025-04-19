@@ -461,6 +461,34 @@
         }
       }
     </style>
+    <style>
+      @media (max-width: 768px) {
+        /* Stack vertically for mobile */
+        .horoscope-container {
+          display: block;
+        }
+
+        .horoscope-grid {
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .horoscope-item {
+          min-width: 100%;
+          text-align: left; /* Ensure labels align properly */
+        }
+
+        /* Center the image at the bottom */
+        .horoscope-item {
+          text-align: left;
+        }
+
+        .horoscope-image {
+          margin-top: 2rem;
+          text-align: center;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -523,26 +551,108 @@
             </div>
           </div>
 
-          <div class="horoscope-container">
-            <div class="horoscope-grid">
-              <div class="horoscope-item">
-                <div class="horoscope-label">Rasi</div>
-                <div class="horoscope-value">Vrushabha</div>
+          <!-- Horoscope Section -->
+          <div
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              gap: 2rem;
+              padding: 1.5rem;
+              border: 1px solid #d4af37;
+              border-radius: 12px;
+              background-color: #fff8e1;
+            "
+          >
+            <!-- Left Half: Horoscope Details (Two Rows) -->
+            <div
+              style="
+                flex: 1;
+                min-width: 280px;
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+              "
+            >
+              <!-- Row 1: First Two Elements -->
+              <div
+                style="display: flex; justify-content: space-between; gap: 1rem"
+              >
+                <div class="horoscope-item" style="flex: 1; min-width: 140px">
+                  <div
+                    class="horoscope-label"
+                    style="font-weight: bold; color: #a67c00"
+                  >
+                    Rasi
+                  </div>
+                  <div class="horoscope-value" style="color: #444">
+                    Vrushabha
+                  </div>
+                </div>
+
+                <div class="horoscope-item" style="flex: 1; min-width: 140px">
+                  <div
+                    class="horoscope-label"
+                    style="font-weight: bold; color: #a67c00"
+                  >
+                    Nakshathra
+                  </div>
+                  <div class="horoscope-value" style="color: #444">Rohini</div>
+                </div>
               </div>
 
-              <div class="horoscope-item">
-                <div class="horoscope-label">Nakshathra</div>
-                <div class="horoscope-value">Rohini</div>
-              </div>
+              <!-- Row 2: Last Two Elements -->
+              <div
+                style="display: flex; justify-content: space-between; gap: 1rem"
+              >
+                <div class="horoscope-item" style="flex: 1; min-width: 140px">
+                  <div
+                    class="horoscope-label"
+                    style="font-weight: bold; color: #a67c00"
+                  >
+                    Swagothram
+                  </div>
+                  <div class="horoscope-value" style="color: #444">
+                    Medunakula
+                  </div>
+                </div>
 
-              <div class="horoscope-item">
-                <div class="horoscope-label">Swagothram</div>
-                <div class="horoscope-value">Medunakula</div>
+                <div class="horoscope-item" style="flex: 1; min-width: 140px">
+                  <div
+                    class="horoscope-label"
+                    style="font-weight: bold; color: #a67c00"
+                  >
+                    Maternal Gothram
+                  </div>
+                  <div class="horoscope-value" style="color: #444">
+                    Bhudanakula
+                  </div>
+                </div>
               </div>
+            </div>
 
-              <div class="horoscope-item">
-                <div class="horoscope-label">Maternal Gothram</div>
-                <div class="horoscope-value">Bhudanakula</div>
+            <!-- Right Half: Kundali Image -->
+            <div
+              style="
+                flex: 1;
+                min-width: 280px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <div style="text-align: center">
+                <img
+                  src="Images/personal/kundali.png"
+                  alt="Kundali Chart"
+                  style="
+                    max-width: 100%;
+                    height: auto;
+                    width: 200px;
+                    border: 2px solid #d4af37;
+                    border-radius: 12px;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                  "
+                />
               </div>
             </div>
           </div>
