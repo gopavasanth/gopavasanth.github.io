@@ -475,32 +475,39 @@
         }
       }
     </style>
-<style>
-  @media (max-width: 768px) {
-    .horoscope-container {
-      flex-direction: column;
-      padding: 1rem;
-    }
+    <!-- Horoscope style -->
+    <style>
+      @media (max-width: 380px) {
+        /* Stack the two columns on small screens like Galaxy S8+ */
+        .horoscope-item-wrapper {
+          flex-direction: column !important;
+          align-items: stretch;
+        }
 
-    .horoscope-grid {
-      gap: 1rem;
-    }
+        .horoscope-item {
+          width: 100% !important;
+        }
 
-    .horoscope-grid > div {
-      flex-direction: row;
-    }
+        .horoscope-image {
+          display: flex !important;
+          justify-content: center !important;
+          align-items: center !important;
+          width: 100%;
+          margin-top: 1.5rem;
+        }
 
-    .horoscope-item {
-      min-width: 100%;
-      text-align: left;
-    }
+        .horoscope-image > div {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
 
-    .horoscope-image {
-      margin-top: 2rem;
-      justify-content: center;
-    }
-  }
-</style>
+        .horoscope-image img {
+          margin: 0 auto;
+          display: block;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -562,52 +569,114 @@
           </div>
 
           <!-- Horoscope Section -->
-          <div class="horoscope-container" style="display: flex; flex-wrap: wrap; gap: 2rem; padding: 1.5rem; border: 1px solid #d4af37; border-radius: 12px; background-color: #fff8e1;">
-
-            <!-- Left Half: Horoscope Grid -->
-            <div class="horoscope-grid" style="flex: 1; min-width: 280px; display: flex; flex-direction: column; gap: 1.5rem;">
-              
+          <div
+            class="horoscope-container"
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              gap: 2rem;
+              padding: 1.5rem;
+              border: 1px solid #d4af37;
+              border-radius: 12px;
+              background-color: #fff8e1;
+            "
+          >
+            <!-- Left Half: Horoscope Details -->
+            <div
+              class="horoscope-grid"
+              style="
+                flex: 1;
+                min-width: 280px;
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+              "
+            >
               <!-- Row 1 -->
-              <div style="display: flex; gap: 1rem;">
-                <div class="horoscope-item" style="flex: 1; min-width: 140px;">
-                  <div class="horoscope-label" style="font-weight: bold; color: #a67c00;">రాశి</div>
-                  <div class="horoscope-value" style="color: #444;">వృషభం</div>
+              <div
+                class="horoscope-item-wrapper"
+                style="display: flex; justify-content: space-between; gap: 1rem"
+              >
+                <div class="horoscope-item" style="flex: 1; min-width: 140px">
+                  <div
+                    class="horoscope-label"
+                    style="font-weight: bold; color: #a67c00"
+                  >
+                  రాశి
+                  </div>
+                  <div class="horoscope-value" style="color: #444">
+                    వృషభం
+                  </div>
                 </div>
 
-                <div class="horoscope-item" style="flex: 1; min-width: 140px;">
-                  <div class="horoscope-label" style="font-weight: bold; color: #a67c00;">నక్షత్రం</div>
-                  <div class="horoscope-value" style="color: #444;">రోహిణి</div>
+                <div class="horoscope-item" style="flex: 1; min-width: 140px">
+                  <div
+                    class="horoscope-label"
+                    style="font-weight: bold; color: #a67c00"
+                  >
+                  నక్షత్రం
+                  </div>
+                  <div class="horoscope-value" style="color: #444">రోహిణి</div>
                 </div>
               </div>
 
               <!-- Row 2 -->
-              <div style="display: flex; gap: 1rem;">
-                <div class="horoscope-item" style="flex: 1; min-width: 140px;">
-                  <div class="horoscope-label" style="font-weight: bold; color: #a67c00;">స్వగోత్రం</div>
-                  <div class="horoscope-value" style="color: #444;">మిధునకుల</div>
+              <div
+                class="horoscope-item-wrapper"
+                style="display: flex; justify-content: space-between; gap: 1rem"
+              >
+                <div class="horoscope-item" style="flex: 1; min-width: 140px">
+                  <div
+                    class="horoscope-label"
+                    style="font-weight: bold; color: #a67c00"
+                  >
+                  స్వగోత్రం
+                  </div>
+                  <div class="horoscope-value" style="color: #444">
+                    మిధునకుల
+                  </div>
                 </div>
 
-                <div class="horoscope-item" style="flex: 1; min-width: 140px;">
-                  <div class="horoscope-label" style="font-weight: bold; color: #a67c00;">మేనమామ గోత్రం</div>
-                  <div class="horoscope-value" style="color: #444;">భూదనకుల</div>
+                <div class="horoscope-item" style="flex: 1; min-width: 140px">
+                  <div
+                    class="horoscope-label"
+                    style="font-weight: bold; color: #a67c00"
+                  >
+                  మేనమామ గోత్రం
+                  </div>
+                  <div class="horoscope-value" style="color: #444">
+                    బుధనకుల
+                  </div>
                 </div>
               </div>
             </div>
 
             <!-- Right Half: Kundali Image -->
-            <div class="horoscope-image" style="flex: 1; min-width: 280px; display: flex; justify-content: center; align-items: center;">
-              <img
-                src="Images/personal/kundali.png"
-                alt="Kundali Chart"
-                style="
-                  max-width: 100%;
-                  height: auto;
-                  width: 200px;
-                  border: 2px solid #d4af37;
-                  border-radius: 12px;
-                  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-                "
-              />
+            <!-- Right Half: Kundali Image -->
+            <div
+              class="horoscope-image"
+              style="
+                flex: 1;
+                min-width: 280px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <div style="text-align: center">
+                <img
+                  src="Images/personal/kundali.png"
+                  alt="Kundali Chart"
+                  style="
+                    max-width: 100%;
+                    height: auto;
+                    width: 200px;
+                    border: 2px solid #d4af37;
+                    border-radius: 12px;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                  "
+                />
+              </div>
             </div>
           </div>
 
