@@ -85,7 +85,7 @@
   }
 
   .rsvp-iframe-container iframe {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -136,8 +136,8 @@
                   <h1>Vasanth &amp; Lahari</h1>
                   <br />
                   <img src="images/fprint.png" alt="Vasanth + Lahari" />
-                  <h2>30.07.2025</h2>
-                  <h2>
+                  <h2 style="font-size: 48px;">30.07.2025</h2>
+                  <h2 style="font-size: 32px;">
                     "I have found the one meant for me, by love and grace."
                   </h2>
                   <div class="flipTimebox">
@@ -146,18 +146,6 @@
                   <button id="openRSVP" class="btn btn-primary btn-sm">
                     Celebrate With Us – RSVP
                   </button>
-                  <div
-                    id="rsvpForm"
-                    style="display: none; margin-top: 20px; padding: 10px"
-                  >
-                    <div class="rsvp-iframe-container">
-                      <iframe
-                        src="https://docs.google.com/forms/d/e/1FAIpQLSdgawwt5pPzsTv-hB_vih-Daz95Y5vdJYiDI22YrUQZ7rxbZQ/viewform?usp=dialog"
-                        allowfullscreen
-                        loading="lazy"
-                      ></iframe>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -245,6 +233,19 @@
         </div>
       </div>
 
+      <div
+        id="rsvpForm"
+        style="display: none; margin-top: 20px; padding: 10px"
+      >
+        <div class="rsvp-iframe-container">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdgawwt5pPzsTv-hB_vih-Daz95Y5vdJYiDI22YrUQZ7rxbZQ/viewform?usp=dialog"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+
       <div class="gototop js-top">
         <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
       </div>
@@ -275,6 +276,11 @@
           var formDiv = document.getElementById("rsvpForm");
           formDiv.style.display =
             formDiv.style.display === "none" ? "block" : "none";
+          if (formDiv.style.display === "block") {
+            setTimeout(function() {
+              formDiv.scrollIntoView({ behavior: "smooth", block: "start" });
+            }, 100); // slight delay to ensure it's visible before scroll
+          }
         });
     </script>
   </body>
