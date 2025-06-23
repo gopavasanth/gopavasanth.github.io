@@ -68,6 +68,11 @@
     <![endif]-->
   </head>
   <style>
+  @media (max-width: 768px) {
+    .js-fh5co-nav-toggle {
+      display: none !important;
+    }
+  } 
 
   #rsvpForm {
     display: none;
@@ -98,12 +103,33 @@
       height: 900px; /* slightly more space for mobile */
     }
   }
+
+  .responsive-map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  .responsive-map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
 </style>
 
   </style>
   <body>
     <div class="fh5co-loader"></div>
     <div id="page">
+      <!--
       <nav class="fh5co-nav" role="navigation">
         <div class="container">
           <div class="row">
@@ -116,6 +142,7 @@
           </div>
         </div>
       </nav>
+      -->
 
       <header
         id="fh5co-header"
@@ -138,7 +165,7 @@
                   <img src="images/fprint.png" alt="Vasanth + Lahari" />
                   <h2 style="font-size: 48px;">30.07.2025</h2>
                   <h2 style="font-size: 32px;">
-                    "I have found the one meant for me, by love and grace."
+                    "We have found the ones meant for us, by love and grace"
                   </h2>
                   <div class="flipTimebox">
                     <div class="clock clock-fix"></div>
@@ -174,21 +201,21 @@
                   <i class="icon-clock"></i><span>04:30 PM</span>
                 </div>
                 <p>At <b>Whitfield area.</b> <b>Essotto Banquet Hall</b></p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.922426422946!2d77.72367427489561!3d12.976813314764383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11eb33cf5e43%3A0xce194237c3dcc9fd!2sEssotto%20Banquet%20Hall!5e0!3m2!1sen!2sin!4v1750623720791!5m2!1sen!2sin" 
-                  width="400" 
-                  height="350"
-                  style="border:0;"
-                  allowfullscreen="" 
-                  loading="lazy" 
-                  referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                <div class="responsive-map-container">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.922426422946!2d77.72367427489561!3d12.976813314764383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11eb33cf5e43%3A0xce194237c3dcc9fd!2sEssotto%20Banquet%20Hall!5e0!3m2!1sen!2sin!4v1750623720791!5m2!1sen!2sin"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div id="fh5co-gallery" class="fh5co-section-gray">
+      <!-- <div id="fh5co-gallery" class="fh5co-section-gray">
         <div class="container">
           <div class="row">
             <div
@@ -231,7 +258,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div
         id="rsvpForm"
