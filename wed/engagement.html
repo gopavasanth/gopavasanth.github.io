@@ -46,6 +46,11 @@
       href="https://fonts.googleapis.com/css?family=Sofia+Sans+Condensed"
       rel="stylesheet"
     />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/responsive-clock.css" />
@@ -66,84 +71,202 @@
     <!--[if lt IE 9]>
       <script src="js/respond.min.js"></script>
     <![endif]-->
+    <style>
+      /* Existing styles */
+      @media (max-width: 768px) {
+        .js-fh5co-nav-toggle {
+          display: none !important;
+        }
+      }
+
+      #rsvpForm {
+        display: none;
+        margin-top: 20px;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+      }
+      .rsvp-iframe-container {
+        position: relative;
+        width: 100%;
+        height: 800px;
+        overflow: hidden;
+      }
+
+      .rsvp-iframe-container iframe {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      @media (max-width: 768px) {
+        .rsvp-iframe-container {
+          height: 900px; /* slightly more space for mobile */
+        }
+      }
+
+      .responsive-map-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+      .responsive-map-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      /* New styles for Invited By section */
+      #fh5co-invited-by {
+        padding: 80px 0;
+        background: #fff;
+        position: relative;
+      }
+
+      .invited-by-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-top: 40px;
+      }
+
+      .family-card {
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        padding: 30px;
+        width: 100%;
+        max-width: 450px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .family-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+      }
+
+      .groom-family {
+        border-top: 4px solid #4a90e2;
+      }
+
+      .bride-family {
+        border-top: 4px solid #e91e63;
+      }
+
+      .family-icon {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+
+      .groom-family .family-icon {
+        color: #4a90e2;
+      }
+
+      .bride-family .family-icon {
+        color: #e91e63;
+      }
+
+      .family-card h3 {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+        color: #333;
+        font-family: "Sacramento", cursive;
+      }
+
+      .parents-names {
+        font-size: 1.5rem;
+        line-height: 1.6;
+        color: #555;
+        font-family: "Sofia Sans Condensed", sans-serif;
+      }
+
+      .family-label {
+        display: inline-block;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        margin-top: 15px;
+      }
+
+      .groom-label {
+        background: #e8f2ff;
+        color: #4a90e2;
+      }
+
+      .bride-label {
+        background: #fce4ec;
+        color: #e91e63;
+      }
+
+      .heart-divider {
+        font-size: 2.5rem;
+        color: #e91e63;
+        margin: 30px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .heart-divider i {
+        animation: pulse 1.5s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .invited-by-container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .family-card {
+          max-width: 100%;
+        }
+
+        .family-card h3 {
+          font-size: 1.8rem;
+        }
+
+        .parents-names {
+          font-size: 1.3rem;
+        }
+
+        .heart-divider {
+          margin: 20px 0;
+        }
+      }
+    </style>
   </head>
-  <style>
-  @media (max-width: 768px) {
-    .js-fh5co-nav-toggle {
-      display: none !important;
-    }
-  } 
 
-  #rsvpForm {
-    display: none;
-    margin-top: 20px;
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-  }
-  .rsvp-iframe-container {
-    position: relative;
-    width: 100%;
-    height: 800px;
-    overflow: hidden;
-  }
-
-  .rsvp-iframe-container iframe {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
-
-  @media (max-width: 768px) {
-    .rsvp-iframe-container {
-      height: 900px; /* slightly more space for mobile */
-    }
-  }
-
-  .responsive-map-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  }
-  .responsive-map-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
-</style>
-
-  </style>
   <body>
     <div class="fh5co-loader"></div>
     <div id="page">
-      <!--
-      <nav class="fh5co-nav" role="navigation">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-10 text-right menu-1">
-              <ul>
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#fh5co-gallery">Gallery</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-      -->
-
       <header
         id="fh5co-header"
         class="fh5co-cover"
@@ -163,8 +286,8 @@
                   <h1>Vasanth &amp; Lahari</h1>
                   <br />
                   <img src="images/fprint.png" alt="Vasanth + Lahari" />
-                  <h2 style="font-size: 48px;">30.07.2025</h2>
-                  <h2 style="font-size: 32px;">
+                  <h2 style="font-size: 48px">30.07.2025</h2>
+                  <h2 style="font-size: 32px">
                     "We have found the ones meant for us, by love and grace"
                   </h2>
                   <div class="flipTimebox">
@@ -179,6 +302,72 @@
           </div>
         </div>
       </header>
+
+      <!-- Enhanced Invited By Section -->
+      <section id="fh5co-invited-by" class="section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center animate-box">
+              <h2
+                style="
+                  font-size: 5.8rem;
+                  margin-bottom: 20px;
+                  font-family: 'Sacramento', cursive;
+                  color: #e91e63;
+                "
+              >
+                Invited With Love
+              </h2>
+              <p
+                style="
+                  font-size: 2.2rem;
+                  color: #666;
+                  max-width: 700px;
+                  margin: 0 auto 40px;
+                  font-family: 'Work Sans', sans-serif;
+                "
+              >
+                We are honored to invite you to celebrate our union as we begin
+                our journey together
+              </p>
+            </div>
+          </div>
+
+          <div class="invited-by-container">
+            <!-- Groom's Family -->
+            <div class="family-card groom-family">
+              <div class="family-icon">
+                <i class="fas fa-heart-pulse"></i>
+              </div>
+              <h3 style="font-size: 3.5rem">Gopa Family</h3>
+              <div class="parents-names" style="font-size: 2.5rem">
+                Jaya Prakash &amp; Vijaya Lakshmi
+              </div>
+              <div class="family-label groom-label" style="font-size: 1.5rem">
+                Groom's Parents
+              </div>
+            </div>
+
+            <div class="heart-divider">
+              <i class="fas fa-heart"></i>
+            </div>
+
+            <!-- Bride's Family -->
+            <div class="family-card bride-family">
+              <div class="family-icon">
+                <i class="fas fa-heart-circle-plus"></i>
+              </div>
+              <h3 style="font-size: 3.5rem">Kadimicherla Family</h3>
+              <div class="parents-names" style="font-size: 2.5rem">
+                Subramanyam &amp; Jhansi
+              </div>
+              <div class="family-label bride-label" style="font-size: 1.5rem">
+                Bride's Parents
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <div id="fh5co-event" class="fh5co-bg">
         <div class="overlay"></div>
@@ -215,55 +404,7 @@
         </div>
       </div>
 
-      <!-- <div id="fh5co-gallery" class="fh5co-section-gray">
-        <div class="container">
-          <div class="row">
-            <div
-              class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box"
-            >
-              <h2>Gallery</h2>
-            </div>
-          </div>
-          <div class="row row-bottom-padded-md">
-            <div class="col-md-12">
-              <ul id="fh5co-gallery-list">
-                <li
-                  class="one-third animate-box"
-                  data-animate-effect="fadeIn"
-                  style="background-image: url(images/pic1.png)"
-                >
-                  <a href="images/pic1.png"
-                    ><div class="case-studies-summary"></div
-                  ></a>
-                </li>
-                <li
-                  class="one-third animate-box"
-                  data-animate-effect="fadeIn"
-                  style="background-image: url(images/pic2.png)"
-                >
-                  <a href="images/pic2.png"
-                    ><div class="case-studies-summary"></div
-                  ></a>
-                </li>
-                <li
-                  class="one-third animate-box"
-                  data-animate-effect="fadeIn"
-                  style="background-image: url(images/pic3.png)"
-                >
-                  <a href="images/pic3.png"
-                    ><div class="case-studies-summary"></div
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-      <div
-        id="rsvpForm"
-        style="display: none; margin-top: 20px; padding: 10px"
-      >
+      <div id="rsvpForm" style="display: none; margin-top: 20px; padding: 10px">
         <div class="rsvp-iframe-container">
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSdgawwt5pPzsTv-hB_vih-Daz95Y5vdJYiDI22YrUQZ7rxbZQ/viewform?usp=dialog"
@@ -304,7 +445,7 @@
           formDiv.style.display =
             formDiv.style.display === "none" ? "block" : "none";
           if (formDiv.style.display === "block") {
-            setTimeout(function() {
+            setTimeout(function () {
               formDiv.scrollIntoView({ behavior: "smooth", block: "start" });
             }, 100); // slight delay to ensure it's visible before scroll
           }
