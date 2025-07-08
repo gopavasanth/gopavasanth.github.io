@@ -261,6 +261,24 @@
           margin: 20px 0;
         }
       }
+
+      /* Fix overlap of scroll up and music control on mobile */
+      @media (max-width: 600px) {
+        /* Keep music control at bottom right */
+        #musicControl {
+          bottom: 20px;
+          right: 20px;
+        }
+        /* Move scroll up button to bottom left */
+        .gototop.js-top {
+          left: 20px;
+          right: auto;
+          bottom: 20px;
+          top: auto;
+          position: fixed !important;
+          z-index: 9999;
+        }
+      }
     </style>
   </head>
 
