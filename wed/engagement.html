@@ -369,6 +369,36 @@
         </div>
       </section>
 
+      <!-- Audio Player (add before </body>) -->
+      <audio id="weddingAudio" loop>
+        <source src="./static/audio.mp3" type="audio/mpeg" />
+      </audio>
+
+      <div
+        id="musicControl"
+        style="
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          z-index: 9999;
+          background: rgba(255, 255, 255, 0.8);
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <i
+          id="musicIcon"
+          class="fas fa-pause"
+          style="font-size: 24px; color: #e91e63"
+        ></i>
+      </div>
+
       <div id="fh5co-event" class="fh5co-bg">
         <div class="overlay"></div>
         <div class="container">
@@ -438,18 +468,43 @@
 
     <!-- RSVP toggle logic -->
     <script>
-      document
-        .getElementById("openRSVP")
-        .addEventListener("click", function () {
-          var formDiv = document.getElementById("rsvpForm");
-          formDiv.style.display =
-            formDiv.style.display === "none" ? "block" : "none";
-          if (formDiv.style.display === "block") {
-            setTimeout(function () {
-              formDiv.scrollIntoView({ behavior: "smooth", block: "start" });
-            }, 100); // slight delay to ensure it's visible before scroll
-          }
+      const audio = document.getElementById("weddingAudio");
+      const musicControl = document.getElementById("musicControl");
+      const musicIcon = document.getElementById("musicIcon");
+
+      // Set initial volume
+      audio.volume = 0.5;
+
+      // Try to play audio automatically on page load
+      document.addEventListener("DOMContentLoaded", function () {
+        audio.play().catch((e) => {
+          // If autoplay fails, show play icon
+          musicIcon.classList.replace("fa-pause", "fa-play");
         });
+      });
+
+      // Play/pause when clicking anywhere on page
+      document.body.addEventListener("click", function (e) {
+        // Don't trigger if clicking on music control
+        if (e.target.closest("#musicControl")) return;
+
+        if (audio.paused) {
+          audio.play();
+          musicIcon.classList.replace("fa-play", "fa-pause");
+        }
+      });
+
+      // Toggle play/pause with control button
+      musicControl.addEventListener("click", function (e) {
+        e.stopPropagation();
+        if (audio.paused) {
+          audio.play();
+          musicIcon.classList.replace("fa-play", "fa-pause");
+        } else {
+          audio.pause();
+          musicIcon.classList.replace("fa-pause", "fa-play");
+        }
+      });
     </script>
   </body>
 </html>
