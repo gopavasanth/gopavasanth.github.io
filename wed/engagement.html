@@ -523,6 +523,21 @@
           musicIcon.classList.replace("fa-pause", "fa-play");
         }
       });
+
+      document
+        .getElementById("openRSVP")
+        .addEventListener("click", function () {
+          const rsvpForm = document.getElementById("rsvpForm");
+          if (
+            rsvpForm.style.display === "none" ||
+            rsvpForm.style.display === ""
+          ) {
+            rsvpForm.style.display = "block";
+            rsvpForm.scrollIntoView({ behavior: "smooth" });
+          } else {
+            rsvpForm.style.display = "none";
+          }
+        });
     </script>
   </body>
 </html>
