@@ -3,7 +3,7 @@ $(document).ready(function() {
 
   // Use moment.tz for both current and target time to avoid timezone issues
   let currentDate = moment.tz("Asia/Kolkata");
-  let targetDate = moment.tz("2025-07-30 17:00", "Asia/Kolkata"); // 17:00 = 5:00 PM
+  let targetDate = moment.tz("2025-07-30 18:00", "Asia/Kolkata"); // 17:00 = 5:00 PM
 
   // Calculate the difference in seconds
   let diff = targetDate.diff(currentDate, 'seconds');
