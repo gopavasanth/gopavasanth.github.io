@@ -7,6 +7,9 @@ language: 'en-uk'
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
 baseurl: /blog/
 
+# Public site URL used for canonical links and footer
+url: https://gopavasanth.github.io
+
 # Website info
 title: Gopa's-Blog
 description: Exploring, Experimenting, and Enjoying the little Experiences 💫
