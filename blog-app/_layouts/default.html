@@ -9,7 +9,7 @@
     {% include dynamic_title.html %}
     <title>
       {% if title %}{{ title }}{% elsif page.title %}{{ page.title | default: ""
-      | cgi_escape }}{% else %}{{ site.title }}{% endif %}
+      }}{% else %}{{ site.title }}{% endif %}
     </title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
