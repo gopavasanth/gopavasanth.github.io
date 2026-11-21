@@ -6,44 +6,35 @@
     <title>Vasanth Gopa · Site Reliability Engineer</title>
     <meta
       name="description"
-      content="Vasanth Gopa — Site Reliability Engineer at American Express, previously DevOps at SAP Labs India, and Wikimedia open source community lead."
+      content="Vasanth Gopa keeps production running at American Express and helps open source communities grow at Wikimedia."
     />
     <meta
       name="keywords"
       content="Gopa Vasanth, Vasanth Gopa, gopavasanth, SRE, DevOps, Wikimedia"
     />
-    <meta name="theme-color" content="#0d0e0b" />
+    <meta name="theme-color" content="#f3f1ea" />
     <link rel="canonical" href="https://gopavasanth.me/" />
     <link rel="icon" href="Images/Gopa.jpg" type="image/jpeg" />
 
-    <meta
-      property="og:title"
-      content="Vasanth Gopa · Site Reliability Engineer"
-    />
+    <meta property="og:title" content="Vasanth Gopa · Site Reliability Engineer" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://gopavasanth.me" />
-    <meta
-      property="og:image"
-      content="https://gopavasanth.me/Images/Gopa.jpg"
-    />
+    <meta property="og:image" content="https://gopavasanth.me/Images/Gopa.jpg" />
     <meta
       property="og:description"
-      content="SRE at American Express, previously DevOps at SAP Labs India, and Wikimedia open source community lead."
+      content="I keep production running at American Express and help open source communities grow at Wikimedia."
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=JetBrains+Mono:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/site.css" />
 
     <!-- Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-W4FHKJLFC4"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W4FHKJLFC4"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -55,164 +46,99 @@
   </head>
 
   <body>
-    <!--
-      Page structure only. Content lives in js/home-data.js and is rendered by js/home.js.
-      The hero text below is kept in HTML so it is visible before JavaScript runs.
-    -->
-    <main class="page">
-      <header class="hero">
-        <div class="hero__status meta">
-          <span
-            ><span class="status-dot" aria-hidden="true"></span>Building
-            systems. Keeping them alive.</span
-          >
-          <span>Bangalore, India · UTC+5:30</span>
-        </div>
-        <h1>Vasanth<br />Gopa</h1>
-        <div class="hero__row">
-          <p class="hero__intro">
-            Site Reliability Engineer at American Express, previously DevOps at
-            SAP Labs India. Outside work I run open source programs, mentor
-            newcomers and help fund community projects across South Asia for
-            Wikimedia.
-          </p>
-          <div class="hero__side">
-            <img
-              class="hero__photo"
-              src="Images/gopa-pic.png"
-              alt="Vasanth Gopa"
-              width="104"
-              height="128"
-            />
-            <nav
-              class="hero__links"
-              id="header-links"
-              aria-label="Profiles"
-            ></nav>
+    <header class="intro" data-screen-label="Intro">
+      <div class="intro__top">
+        <div class="intro__name"><span>Vasanth Gopa</span><span>Bangalore</span></div>
+        <nav class="intro__nav" aria-label="Elsewhere">
+          <a href="https://github.com/gopavasanth">GitHub</a>
+          <a href="https://www.linkedin.com/in/gopa-vasanth">LinkedIn</a>
+          <a href="https://www.mediawiki.org/wiki/User:Gopavasanth">MediaWiki</a>
+          <a href="stack.html">Stack map</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <h1 class="intro__title">
+        I keep production running at <span class="hl">American Express</span> and help
+        open source communities grow at <span class="hl">Wikimedia</span>.
+      </h1>
+      <div class="intro__bottom">
+        <div class="intro__who">
+          <img src="Images/Gopa.jpg" alt="Vasanth Gopa" width="64" height="64" />
+          <div class="mono intro__meta">
+            <span class="muted">Site Reliability Engineer · open source since 2017</span>
+            <span class="uptime"
+              ><span class="dot" aria-hidden="true"></span><span>uptime <span id="uptime"></span></span
+            ></span>
           </div>
         </div>
-      </header>
+        <a href="#journey" class="mono muted">scroll · 2017 → now ↓</a>
+      </div>
+    </header>
 
-      <section class="section" aria-labelledby="map-title">
-        <div class="section-head">
-          <h2 id="map-title">The stack I build, ship and keep running</h2>
-          <div
-            class="filters"
-            id="org-filters"
-            role="group"
-            aria-label="Filter by organisation"
-          ></div>
-        </div>
-        <div class="map" id="map">
-          <div class="map__main">
-            <div class="map__bar meta">
-              <span>production.map</span>
-              <span class="map__hint">click any component to inspect it →</span>
+    <section id="journey" class="journey" data-screen-label="Journey" aria-label="Journey, 2017 to now">
+      <div class="journey__stage">
+        <div class="journey__head" id="journey-head">
+          <div class="journey__year-wrap">
+            <div class="journey__year" aria-live="polite">
+              <span>20</span>
+              <span class="roll"><span class="roll__col" id="d3"></span></span>
+              <span class="roll"><span class="roll__col" id="d4"></span></span>
             </div>
-            <div class="map__cols" id="map-columns"></div>
+            <span class="journey__chapter" id="chapter"></span>
           </div>
-          <aside
-            class="inspector"
-            id="inspector"
-            aria-label="Component details"
+          <span class="mono muted" id="counter"></span>
+        </div>
+        <div class="track" id="track"></div>
+        <div class="ruler" id="ruler">
+          <div class="ruler__bar"><div class="ruler__fill" id="ruler-fill"></div></div>
+          <div class="ruler__years mono" id="ruler-years"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="modes" data-screen-label="How I work" aria-labelledby="modes-title">
+      <div class="modes__head">
+        <h2 id="modes-title">Three jobs I keep coming back to.</h2>
+        <a href="stack.html" class="pill">Explore the stack map →</a>
+      </div>
+      <div class="modes__grid" id="modes"></div>
+    </section>
+
+    <section id="contact" class="contact" data-screen-label="Contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Let's talk.</h2>
+      <a class="booking" href="https://topmate.io/gopavasanth" target="_blank" rel="noopener">
+        <div class="booking__meta mono"><span>topmate.io/gopavasanth</span><span>1:1 sessions</span></div>
+        <span class="booking__title">Book time with me on Topmate.</span>
+        <div class="booking__list">
+          <span>SRE and DevOps careers</span>
+          <span>Getting into GSoC and Outreachy</span>
+          <span>Contributing to Wikimedia and open source</span>
+        </div>
+        <div class="booking__foot">
+          <span class="booking__cta">Book a session →</span>
+          <span class="mono booking__mail">or gopavasanth1999@gmail.com</span>
+        </div>
+      </a>
+      <footer class="footer mono">
+        <div class="footer__left">
+          <span>Vasanth Gopa · Bangalore</span>
+          <span class="footer__credits"
+            >City photos via Wikimedia Commons (CC BY / BY-SA): Pudelek (Marcin Szala), Pudelek, Tim
+            Reckmann from Hamm, Deutschland, Bijay Chaurasia, A.Savin, David Nagle, acediscovery,
+            Shadychiri, Jakub Hałun, Getfunky Paris.</span
           >
-            <div class="inspector__sticky">
-              <div class="inspector__head">
-                <div class="inspector__status">
-                  <span>● inspecting</span><span id="inspector-mode"></span>
-                </div>
-                <div class="tour-bar" id="tour-bar"></div>
-              </div>
-              <div
-                class="inspector__body"
-                id="inspector-body"
-                aria-live="polite"
-              ></div>
-            </div>
-          </aside>
+          <span class="footer__credits" id="last-updated"></span>
         </div>
-      </section>
-
-      <section class="section" aria-labelledby="career-title">
-        <div class="section-head">
-          <h2 id="career-title">Career status page</h2>
-          <span class="meta" id="career-range"></span>
-        </div>
-        <div class="careers" id="careers"></div>
-        <div class="years" id="career-years" aria-hidden="true"></div>
-      </section>
-
-      <section class="section" aria-labelledby="people-title">
-        <div>
-          <h2 class="h2" id="people-title">The same pipeline, for people</h2>
-          <p class="lede">
-            From a first patch to a funded project on a global stage.
-          </p>
-        </div>
-        <ol class="steps" id="steps"></ol>
-      </section>
-
-      <section class="section" aria-labelledby="departures-title">
-        <div class="section-head">
-          <h2 id="departures-title">Departures</h2>
-          <span class="meta">talks, hackathons and summits abroad</span>
-        </div>
-        <div class="board-wrap">
-          <table class="board">
-            <thead>
-              <tr>
-                <th>Year</th>
-                <th>Destination</th>
-                <th>Event</th>
-                <th>Role</th>
-              </tr>
-            </thead>
-            <tbody id="trips"></tbody>
-          </table>
-        </div>
-        <p class="footnote">
-          <strong>Organised at home:</strong>
-          <span id="organised-at-home"></span>
-        </p>
-      </section>
-
-      <section class="section" aria-labelledby="shipped-title">
-        <h2 class="h2" id="shipped-title">Things I built that people use</h2>
-        <div class="ships" id="shipped"></div>
-      </section>
-
-      <section class="credentials">
-        <div>
-          <h2>Certifications</h2>
-          <ul class="ledger ledger--mono" id="certs"></ul>
-        </div>
-        <div>
-          <h2>Awards</h2>
-          <ul class="ledger ledger--sans" id="awards"></ul>
-        </div>
-      </section>
-
-      <footer class="footer">
-        <div class="footer__cta">
-          <span class="footer__headline"
-            >Need something<br /><em>kept up?</em></span
-          >
-          <div id="topmate"></div>
-        </div>
-        <div class="footer__row">
-          <span id="footer-email"></span>
-          <nav
-            class="footer__links"
-            id="footer-links"
-            aria-label="Elsewhere"
-          ></nav>
-        </div>
-        <span class="footer__meta" id="last-updated"></span>
+        <nav class="footer__links" aria-label="Profiles">
+          <a href="https://github.com/gopavasanth">github</a>
+          <a href="https://www.linkedin.com/in/gopa-vasanth">linkedin</a>
+          <a href="https://gerrit.wikimedia.org/r/#/q/gopavasanth">gerrit</a>
+          <a href="https://www.mediawiki.org/wiki/User:Gopavasanth/Events_and_Activities">events</a>
+        </nav>
       </footer>
-    </main>
+    </section>
 
-    <script src="js/home-data.js"></script>
-    <script src="js/home.js"></script>
+    <script src="js/site.js"></script>
 
     <!-- Statcounter -->
     <script>

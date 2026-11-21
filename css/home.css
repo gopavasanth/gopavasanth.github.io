@@ -110,6 +110,28 @@ ul, ol { padding: 0; list-style: none; }
   color: var(--ink-2);
   text-wrap: pretty;
 }
+.hero__highlight {
+  color: var(--ink);
+  font-weight: 600;
+  white-space: nowrap;
+  text-decoration: underline var(--hl);
+  text-decoration-thickness: .1em;
+  text-underline-offset: .2em;
+  text-decoration-skip-ink: none;
+}
+.hero__highlight::after {
+  content: attr(data-years);
+  display: inline-block; /* keeps the underline off the years tag */
+  margin-left: .35em;
+  font-family: var(--mono);
+  font-size: .5em;
+  font-weight: 400;
+  letter-spacing: .02em;
+  color: var(--muted);
+  vertical-align: .9em;
+}
+.hero__highlight--amex { --hl: var(--accent); }
+.hero__highlight--sap  { --hl: var(--ok); }
 .hero__side { display: flex; gap: 20px; align-items: flex-end; }
 .hero__photo {
   width: 104px;

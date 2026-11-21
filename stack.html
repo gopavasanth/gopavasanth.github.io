@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stack map · Vasanth Gopa</title>
+    <meta
+      name="description"
+      content="Vasanth Gopa — Site Reliability Engineer at American Express, previously DevOps at SAP Labs India, and Wikimedia open source community lead."
+    />
+    <meta
+      name="keywords"
+      content="Gopa Vasanth, Vasanth Gopa, gopavasanth, SRE, DevOps, Wikimedia"
+    />
+    <meta name="theme-color" content="#0d0e0b" />
+    <link rel="canonical" href="https://gopavasanth.me/stack.html" />
+    <link rel="icon" href="Images/Gopa.jpg" type="image/jpeg" />
+
+    <meta
+      property="og:title"
+      content="Vasanth Gopa · Site Reliability Engineer"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gopavasanth.me" />
+    <meta
+      property="og:image"
+      content="https://gopavasanth.me/Images/Gopa.jpg"
+    />
+    <meta
+      property="og:description"
+      content="SRE at American Express, previously DevOps at SAP Labs India, and Wikimedia open source community lead."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/home.css" />
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-W4FHKJLFC4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-W4FHKJLFC4");
+    </script>
+  </head>
+
+  <body>
+    <!--
+      Page structure only. Content lives in js/home-data.js and is rendered by js/home.js.
+      The hero text below is kept in HTML so it is visible before JavaScript runs.
+    -->
+    <main class="page">
+      <header class="hero">
+        <div class="hero__status meta">
+          <span
+            ><span class="status-dot" aria-hidden="true"></span>Building
+            systems. Keeping them alive.</span
+          >
+          <span>Bangalore, India · UTC+5:30</span>
+        </div>
+        <h1>Vasanth<br />Gopa</h1>
+        <div class="hero__row">
+          <p class="hero__intro">
+            Site Reliability Engineer at
+            <span class="hero__highlight hero__highlight--amex"
+              >American Express</span
+            >, previously DevOps at
+            <span class="hero__highlight hero__highlight--sap"
+              >SAP Labs India</span
+            >. Outside work I run open source programs, mentor newcomers and
+            help fund community projects across South Asia for Wikimedia.
+          </p>
+          <div class="hero__side">
+            <img
+              class="hero__photo"
+              src="Images/gopa-pic.png"
+              alt="Vasanth Gopa"
+              width="104"
+              height="128"
+            />
+            <nav
+              class="hero__links"
+              id="header-links"
+              aria-label="Profiles"
+            ></nav>
+          </div>
+        </div>
+      </header>
+
+      <section class="section" aria-labelledby="map-title">
+        <div class="section-head">
+          <h2 id="map-title">The stack I build, ship and keep running</h2>
+          <div
+            class="filters"
+            id="org-filters"
+            role="group"
+            aria-label="Filter by organisation"
+          ></div>
+        </div>
+        <div class="map" id="map">
+          <div class="map__main">
+            <div class="map__bar meta">
+              <span>production.map</span>
+              <span class="map__hint">click any component to inspect it →</span>
+            </div>
+            <div class="map__cols" id="map-columns"></div>
+          </div>
+          <aside
+            class="inspector"
+            id="inspector"
+            aria-label="Component details"
+          >
+            <div class="inspector__sticky">
+              <div class="inspector__head">
+                <div class="inspector__status">
+                  <span>● inspecting</span><span id="inspector-mode"></span>
+                </div>
+                <div class="tour-bar" id="tour-bar"></div>
+              </div>
+              <div
+                class="inspector__body"
+                id="inspector-body"
+                aria-live="polite"
+              ></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="career-title">
+        <div class="section-head">
+          <h2 id="career-title">Career status page</h2>
+          <span class="meta" id="career-range"></span>
+        </div>
+        <div class="careers" id="careers"></div>
+        <div class="years" id="career-years" aria-hidden="true"></div>
+      </section>
+
+      <section class="section" aria-labelledby="people-title">
+        <div>
+          <h2 class="h2" id="people-title">The same pipeline, for people</h2>
+          <p class="lede">
+            From a first patch to a funded project on a global stage.
+          </p>
+        </div>
+        <ol class="steps" id="steps"></ol>
+      </section>
+
+      <section class="section" aria-labelledby="departures-title">
+        <div class="section-head">
+          <h2 id="departures-title">Departures</h2>
+          <span class="meta">talks, hackathons and summits abroad</span>
+        </div>
+        <div class="board-wrap">
+          <table class="board">
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Destination</th>
+                <th>Event</th>
+                <th>Role</th>
+              </tr>
+            </thead>
+            <tbody id="trips"></tbody>
+          </table>
+        </div>
+        <p class="footnote">
+          <strong>Organised at home:</strong>
+          <span id="organised-at-home"></span>
+        </p>
+      </section>
+
+      <section class="section" aria-labelledby="shipped-title">
+        <h2 class="h2" id="shipped-title">Things I built that people use</h2>
+        <div class="ships" id="shipped"></div>
+      </section>
+
+      <section class="credentials">
+        <div>
+          <h2>Certifications</h2>
+          <ul class="ledger ledger--mono" id="certs"></ul>
+        </div>
+        <div>
+          <h2>Awards</h2>
+          <ul class="ledger ledger--sans" id="awards"></ul>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__cta">
+          <span class="footer__headline"
+            >Need something<br /><em>kept up?</em></span
+          >
+          <div id="topmate"></div>
+        </div>
+        <div class="footer__row">
+          <span id="footer-email"></span>
+          <nav
+            class="footer__links"
+            id="footer-links"
+            aria-label="Elsewhere"
+          ></nav>
+        </div>
+        <span class="footer__meta" id="last-updated"></span>
+      </footer>
+    </main>
+
+    <script src="js/home-data.js"></script>
+    <script src="js/home.js"></script>
+
+    <!-- Statcounter -->
+    <script>
+      var sc_project = 12455714;
+      var sc_invisible = 1;
+      var sc_security = "83763bdd";
+      var sc_https = 1;
+    </script>
+    <script src="https://www.statcounter.com/counter/counter.js" async></script>
+  </body>
+</html>
