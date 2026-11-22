@@ -15,50 +15,50 @@
   }
   var YEARS = [
     { year: 2017, chapter: "Found open source at amFOSS, then MediaWiki", items: [
-      I("note", "Joined", "2017", "amFOSS, Amrita University", "The student-run free and open source club where I made my first contributions. Later mentored around 15 juniors there."),
-      I("note", "First patch", "Dec 2017", "Wikimedia", "Started fixing MediaWiki bugs through Gerrit code review. 30+ fixes and features since.")
+      I("note", "Joined", "2017", "amFOSS, Amrita University", "The student-run free and open source club where I made my first contributions. Later mentored around 15 juniors there.", { image: "Images/personal/Amrita_Vasanth.jpg" }),
+      I("note", "First patch", "Dec 2017", "Wikimedia", "Started fixing MediaWiki bugs through Gerrit code review. 30+ fixes and features since.", { image: "Images/personal/Wiki_Gopa.jpg" })
     ]},
     { year: 2019, chapter: "Google Summer of Code, and my first hackathon abroad", items: [
-      I("build", "GSoC project", "2019", "VideoCutTool", "Edit videos in Wikimedia Commons without downloading them. React, Express, FFmpeg, Redis, MongoDB.", { big: "GSoC", unit: "Google Summer of Code student" }),
-      I("trip", "Mentor", "2019", "Prague", "Wikimedia Hackathon")
+      I("build", "GSoC project", "2019", "VideoCutTool", "Edit videos in Wikimedia Commons without downloading them. React, Express, FFmpeg, Redis, MongoDB.", { big: "GSoC", unit: "Google Summer of Code student", image: "Images/personal/GSoC_Gopa.jpg" }),
+      I("trip", "Mentor", "2019", "Prague", "Wikimedia Hackathon", { image: "Images/personal/Prague_Gopa.jpg" })
     ]},
     { year: 2020, chapter: "Shipped an app to strangers", items: [
-      I("build", "Built", "2020", "Flick", "Short-video app on Google Play, running on Azure.", { big: "3,000+", unit: "users in the first four days" }),
+      I("build", "Built", "2020", "Flick", "Short-video app on Google Play, running on Azure.", { big: "3,000+", unit: "users in the first four days", image: "Images/personal/Flick.jpg" }),
       I("trip", "Mentor", "2020", "Albania", "Wikimedia Hackathon")
     ]},
     { year: 2021, chapter: "Joined SAP Labs India", items: [
-      I("work", "Joined", "Feb 2021", "SAP Labs India", "Ran Kubernetes on a public hyperscaler, kept Jenkins and ArgoCD available, built a GitOps framework across 18+ data centres and a change orchestration framework that prevented 45% of outages.", { sub: "Developer Intern → Associate DevOps Engineer", chips: ["Kubernetes", "Jenkins", "ArgoCD", "Helm", "Chef"] }),
-      I("note", "Innovate Award · SAP", "2021", "d-shop", "Inventory app built on SAP Fiori."),
-      I("note", "Hackathon winner · SAP", "2021", "SLara", "Sign language reader. Won the CSR Impact Hackathon.")
+      I("work", "Joined", "Feb 2021", "SAP Labs India", "Ran Kubernetes on a public hyperscaler, kept Jenkins and ArgoCD available, built a GitOps framework across 18+ data centres and a change orchestration framework.", { sub: "Developer Intern → Associate DevOps Engineer", chips: ["Kubernetes", "Jenkins", "ArgoCD", "Helm", "Chef"], image: "Images/personal/sap_gopa.jpg" }),
+      I("note", "Innovate Award · SAP", "2021", "d-shop", "Inventory app built on SAP Fiori.", { image: "Images/personal/arudino_pi.png" }),
+      I("note", "Hackathon winner · SAP", "2021", "SLara", "Sign language reader. Won the CSR Impact Hackathon.", { image: "Images/slara.jpg" })
     ]},
     { year: 2022, chapter: "First talk on an international stage", items: [
-      I("trip", "Speaker", "2022", "Dubai", "WikiArabia"),
-      I("note", "Special Jury Award · SAP", "2022", "Teamup", "SAP SuccessFactors hackathon."),
-      I("note", "Certified", "2022", "SAFe DevOps", "")
+      I("trip", "Speaker", "2022", "Dubai", "WikiArabia", { image: "Images/personal/Dubai_Gopa.JPG" }),
+      I("note", "Special Jury Award · SAP", "2022", "Teamup", "SAP SuccessFactors hackathon.", { image: "Images/teamup.png" }),
+      I("note", "Certified", "2022", "SAFe DevOps", "", { image: "Images/safe_devops.png" })
     ]},
     { year: 2023, chapter: "Built ToolWatch, spoke at Wikimania", items: [
-      I("build", "Built", "2023", "ToolWatch", "Health monitoring for tools running on Wikimedia Toolforge.", { big: "500+", unit: "tools monitored" }),
-      I("trip", "Speaker", "2023", "Singapore", "Wikimania"),
-      I("trip", "Mentor", "2023", "Athens", "Wikimedia Hackathon"),
-      I("trip", "Org admin", "2023", "Google HQ", "GSoC Mentor Summit")
+      I("build", "Built", "2023", "ToolWatch", "Health monitoring for tools running on Wikimedia Toolforge.", { big: "500+", unit: "tools monitored", image: "Images/personal/toolwatch.png" }),
+      I("trip", "Speaker", "2023", "Singapore", "Wikimania", { image: "Images/personal/singapore_gopa.jpg" }),
+      I("trip", "Mentor", "2023", "Athens", "Wikimedia Hackathon", { image: "Images/personal/Greece_Gopa.jpg" }),
+      I("trip", "Org admin", "2023", "Google HQ", "GSoC Mentor Summit", { image: "Images/personal/Google Gopa.jpeg" })
     ]},
     { year: 2024, chapter: "Moved into site reliability", items: [
-      I("note", "Certified", "2024", "Certified Kubernetes Administrator", ""),
-      I("trip", "Mentor", "2024", "Tallinn", "Wikimedia Hackathon"),
-      I("work", "Joined", "Nov 2024", "American Express", "Reliability and observability for 40+ high-traffic production services. Owned the ICS observability strategy with a focus on the Japan market, and led an AI workshop across the UK and India.", { sub: "Site Reliability Engineer III", chips: ["Dynatrace", "Splunk", "F5", "Istio", "OpenShift"] })
+      I("note", "Certified", "2024", "Certified Kubernetes Administrator", "", { image: "Images/personal/CKA.jpeg" }),
+      I("trip", "Mentor", "2024", "Tallinn", "Wikimedia Hackathon", { image: "Images/personal/Tallin_Gopa.jpeg" }),
+      I("work", "Joined", "Nov 2024", "American Express", "Reliability and observability for 40+ high-traffic production services.", { sub: "Site Reliability Engineer III", chips: ["Dynatrace", "Splunk", "F5", "Istio", "OpenShift"], image: "Images/personal/amex_gopa.jpg" })
     ]},
     { year: 2025, chapter: "Less busywork for translators", items: [
-      I("build", "Built", "2025", "TranslateTagger", "Automates translate tags in wikitext.", { big: "~80%", unit: "less translate-admin effort" }),
-      I("trip", "Speaker", "2025", "Nairobi", "Wikimania"),
-      I("note", "Certified", "2025", "AWS Developer Associate", "")
+      I("build", "Built", "2025", "TranslateTagger", "Automates translate tags in wikitext.", { big: "~80%", unit: "less translate-admin effort", image: "Images/personal/translateTagger.jpeg" }),
+      I("trip", "Speaker", "2025", "Nairobi", "Wikimania", { image: "Images/personal/kenya_gopa.jpg" }),
+      I("note", "Certified", "2025", "AWS Developer Associate", "", { image: "Images/personal/aws_dev_ass.png" })
     ]},
     { year: 2026, chapter: "Now", items: [
-      I("build", "Led deployment", "2026", "WISE", "Wikimedia Image Search Engine, brought onto Wikimedia infrastructure with Oxford’s Visual Geometry Group.", { big: "WISE", unit: "with Oxford VGG" }),
-      I("trip", "Mentor", "2026", "Milan", "Wikimedia Hackathon"),
-      I("trip", "Speaker", "2026", "Paris", "Wikimania"),
-      I("note", "Currently", "now", "SRE at Amex. Regional Funds Committee. Indic MediaWiki Developers lead.", "Deciding which South Asian community projects get funded, and running the Indic developer user group.")
+      I("build", "Led deployment", "2026", "WISE", "Wikimedia Image Search Engine, brought onto Wikimedia infrastructure with Oxford’s Visual Geometry Group.", { big: "WISE", unit: "with Oxford VGG", image: "Images/personal/wise.png" }),
+      I("trip", "Mentor", "2026", "Milan", "Wikimedia Hackathon", { image: "Images/personal/italy_gopa.jpg" }),
+      I("trip", "Speaker", "2026", "Paris", "Wikimania", { image: "Images/personal/paris_gopa.jpg" }),
+      I("note", "Currently", "now", "Regional Funds Committee.", "Help South Asian communities and projects through grants", { image: "Images/personal/sa_wmf_rfc.jpeg" })
     ]}
-  ];
+  ].reverse();
   var MODES = [
     { n: "01", title: "Keep it up", text: "At American Express I own observability, SLOs and incidents for 40+ services, and close the logging gaps that slow down on-call.", tools: "Dynatrace · Splunk · OpenSearch · ContentSquare · F5 · Akamai · Istio · ServiceNow" },
     { n: "02", title: "Ship it", text: "At SAP I kept the delivery platform healthy: Jenkins at a 95% job success rate, ArgoCD, GitOps across 18+ data centres and change orchestration that prevented 45% of outages.", tools: "Kubernetes · Helm · Jenkins · ArgoCD · Terraform · Chef · AWS · Python · Java · Node" },
@@ -90,11 +90,13 @@
   // ---------- Journey render ----------
   function card(it) {
     var c = el("div", "card card--" + it.k);
-    if (it.k === "trip") {
+    if (it.image || it.k === "trip") {
       var img = el("img");
-      img.src = "Images/cities/" + CITY[it.title] + ".jpg";
+      img.src = it.image || "Images/cities/" + CITY[it.title] + ".jpg";
       img.alt = it.title;
       img.loading = "lazy";
+      img.className = "card__image";
+      c.classList.add("card--photo");
       c.appendChild(img);
     }
     var meta = el("div", "card__meta");
