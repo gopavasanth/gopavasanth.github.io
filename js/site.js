@@ -88,11 +88,16 @@
   setInterval(function () { up.textContent = fmtUp(); }, 1000);
 
   // ---------- Journey render ----------
+  // Cards show resized WebP copies from Images/thumbs/ (originals stay for full-size use).
+  function thumb(p) {
+    return "Images/thumbs/" + p.split("/").pop().replace(/\.[^.]+$/, "").replace(/ /g, "_") + ".webp";
+  }
   function card(it) {
     var c = el("div", "card card--" + it.k);
     if (it.image || it.k === "trip") {
       var img = el("img");
-      img.src = it.image || "Images/cities/" + CITY[it.title] + ".jpg";
+      img.src = it.image ? thumb(it.image) : "Images/thumbs/city-" + CITY[it.title] + ".webp";
+      img.decoding = "async";
       img.alt = it.title;
       img.loading = "lazy";
       img.className = "card__image";
