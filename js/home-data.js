@@ -143,7 +143,7 @@ window.HOME_DATA = {
   // Career status page. The timeline starts at `careerStart` and runs to the current month.
   careerStart: "2017-01",
   careers: [
-    { name: "American Express", role: "Site Reliability Engineer III", from: "2024-11", to: null, span: "Nov 2024 — now",
+    { name: "American Express", role: "Senior Site Reliability Engineer", from: "2024-11", to: null, span: "Nov 2024 — now",
       text: "Reliability and observability for 40+ high-traffic production services. Owned the ICS observability strategy with a focus on the Japan market, and led an AI workshop across the UK and India." },
     { name: "SAP Labs India", role: "Associate DevOps Engineer · Developer Intern", from: "2021-02", to: "2024-10", span: "Feb 2021 — Oct 2024",
       text: "Ran Kubernetes on a public hyperscaler, kept Jenkins and ArgoCD available, built a GitOps framework across 18+ data centres and a change orchestration framework that prevented 45% of outages." },

@@ -45,7 +45,7 @@
     { year: 2024, chapter: "Moved into site reliability", items: [
       I("note", "Certified", "2024", "Certified Kubernetes Administrator", "", { image: "Images/personal/CKA.jpeg" }),
       I("trip", "Mentor", "2024", "Tallinn", "Wikimedia Hackathon", { image: "Images/personal/Tallin_Gopa.jpeg" }),
-      I("work", "Joined", "Nov 2024", "American Express", "Reliability and observability for 40+ high-traffic production services.", { sub: "Site Reliability Engineer III", chips: ["Dynatrace", "Splunk", "F5", "Istio", "OpenShift"], image: "Images/personal/amex_gopa.jpg" })
+      I("work", "Joined", "Nov 2024", "American Express", "Reliability and observability for 40+ high-traffic production services.", { sub: "Senior Site Reliability Engineer", chips: ["Dynatrace", "Splunk", "F5", "Istio", "OpenShift"], image: "Images/personal/amex_gopa.jpg" })
     ]},
     { year: 2025, chapter: "Less busywork for translators", items: [
       I("build", "Built", "2025", "TranslateTagger", "Automates translate tags in wikitext.", { big: "~80%", unit: "less translate-admin effort", image: "Images/personal/translateTagger.jpeg" }),
