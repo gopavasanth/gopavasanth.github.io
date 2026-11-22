@@ -3,7 +3,7 @@ layout: page
 current: about
 title: About
 navigation: true
-logo: "assets/images/Gopa.jpg"
+logo: "assets/images/gopa-pic.png"
 class: page-template
 subclass: "post page"
 ---
