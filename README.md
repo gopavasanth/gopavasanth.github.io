@@ -1,7 +1,7 @@
 # My Portfolio
 
 This portfolio is built using **pure HTML, CSS, JavaScript, and Bootstrap** for a simple and user-friendly experience!  
-Check it out on **[GitHub Pages](http://gopavasanth.github.io)**.
+Live at **[gopavasanth.com](https://gopavasanth.com)** (GitHub Pages, DNS on Cloudflare).
 
 ## 🚀 Blog App
 

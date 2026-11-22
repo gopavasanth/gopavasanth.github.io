@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> - Articles</title>
+    <title>Vasanth Gopa's Blog</title>
     <description>Exploring, Experimenting, and Enjoying the little Experiences 💫</description>
     <link>
-    http://localhost:4000</link>
+    https://gopavasanth.com/blog/</link>
     
       
       <item>
@@ -16,8 +16,8 @@
         
         <pubDate>Wed, 18 Nov 2026 00:00:00 +0530</pubDate>
         <link>
-        http://localhost:4000/From-a-Rejected-Applicant-to-the-Mentor-Summit</link>
-        <guid isPermaLink="true">http://localhost:4000/From-a-Rejected-Applicant-to-the-Mentor-Summit</guid>
+        https://gopavasanth.com/blog/From-a-Rejected-Applicant-to-the-Mentor-Summit</link>
+        <guid isPermaLink="true">https://gopavasanth.com/blog/From-a-Rejected-Applicant-to-the-Mentor-Summit</guid>
       </item>
       
     
@@ -31,8 +31,8 @@
         
         <pubDate>Tue, 30 Dec 2025 00:00:00 +0530</pubDate>
         <link>
-        http://localhost:4000/Year-in-Review-2025</link>
-        <guid isPermaLink="true">http://localhost:4000/Year-in-Review-2025</guid>
+        https://gopavasanth.com/blog/Year-in-Review-2025</link>
+        <guid isPermaLink="true">https://gopavasanth.com/blog/Year-in-Review-2025</guid>
       </item>
       
     
@@ -46,8 +46,8 @@
         
         <pubDate>Thu, 26 Dec 2024 00:00:00 +0530</pubDate>
         <link>
-        http://localhost:4000/Year-in-Review-2024</link>
-        <guid isPermaLink="true">http://localhost:4000/Year-in-Review-2024</guid>
+        https://gopavasanth.com/blog/Year-in-Review-2024</link>
+        <guid isPermaLink="true">https://gopavasanth.com/blog/Year-in-Review-2024</guid>
       </item>
       
     
@@ -61,8 +61,8 @@
         
         <pubDate>Sun, 31 Dec 2023 00:00:00 +0530</pubDate>
         <link>
-        http://localhost:4000/Year-in-Review-2023</link>
-        <guid isPermaLink="true">http://localhost:4000/Year-in-Review-2023</guid>
+        https://gopavasanth.com/blog/Year-in-Review-2023</link>
+        <guid isPermaLink="true">https://gopavasanth.com/blog/Year-in-Review-2023</guid>
       </item>
       
     
@@ -76,8 +76,8 @@
         
         <pubDate>Sat, 24 Dec 2022 00:00:00 +0530</pubDate>
         <link>
-        http://localhost:4000/Year-in-Review-2022</link>
-        <guid isPermaLink="true">http://localhost:4000/Year-in-Review-2022</guid>
+        https://gopavasanth.com/blog/Year-in-Review-2022</link>
+        <guid isPermaLink="true">https://gopavasanth.com/blog/Year-in-Review-2022</guid>
       </item>
       
     
@@ -85,14 +85,14 @@
       <item>
         <title>Year in Review 2021</title>
         
-          <description>&lt;p&gt;It was not easy to pen down a review of the year 2021, like I had done for &lt;a href=&quot;https://gopavasanth.github.io/blog/Year-in-Review-2020&quot;&gt;2020&lt;/a&gt; and &lt;a href=&quot;https://gopavasanth.github.io/blog/Year-in-Review-2019&quot;&gt;2019&lt;/a&gt;.&lt;/p&gt;
+          <description>&lt;p&gt;It was not easy to pen down a review of the year 2021, like I had done for &lt;a href=&quot;/blog/Year-in-Review-2020&quot;&gt;2020&lt;/a&gt; and &lt;a href=&quot;/blog/Year-in-Review-2019&quot;&gt;2019&lt;/a&gt;.&lt;/p&gt;
 
 </description>
         
         <pubDate>Tue, 21 Dec 2021 00:00:00 +0530</pubDate>
         <link>
-        http://localhost:4000/Year-in-Review-2021</link>
-        <guid isPermaLink="true">http://localhost:4000/Year-in-Review-2021</guid>
+        https://gopavasanth.com/blog/Year-in-Review-2021</link>
+        <guid isPermaLink="true">https://gopavasanth.com/blog/Year-in-Review-2021</guid>
       </item>
       
     
@@ -106,8 +106,8 @@
         
         <pubDate>Wed, 10 Mar 2021 00:00:00 +0530</pubDate>
         <link>
-        http://localhost:4000/Taste-a-cup-of-tea-playing-with-Arduino</link>
-        <guid isPermaLink="true">http://localhost:4000/Taste-a-cup-of-tea-playing-with-Arduino</guid>
+        https://gopavasanth.com/blog/Taste-a-cup-of-tea-playing-with-Arduino</link>
+        <guid isPermaLink="true">https://gopavasanth.com/blog/Taste-a-cup-of-tea-playing-with-Arduino</guid>
       </item>
       
     
@@ -121,8 +121,8 @@
         
         <pubDate>Tue, 12 Jan 2021 00:00:00 +0530</pubDate>
         <link>
-        http://localhost:4000/My-childhood-dream-of-flying</link>
-        <guid isPermaLink="true">http://localhost:4000/My-childhood-dream-of-flying</guid>
+        https://gopavasanth.com/blog/My-childhood-dream-of-flying</link>
+        <guid isPermaLink="true">https://gopavasanth.com/blog/My-childhood-dream-of-flying</guid>
       </item>
       
     
@@ -136,8 +136,8 @@
         
         <pubDate>Sun, 27 Dec 2020 00:00:00 +0530</pubDate>
         <link>
-        http://localhost:4000/Year-in-Review-2020</link>
-        <guid isPermaLink="true">http://localhost:4000/Year-in-Review-2020</guid>
+        https://gopavasanth.com/blog/Year-in-Review-2020</link>
+        <guid isPermaLink="true">https://gopavasanth.com/blog/Year-in-Review-2020</guid>
       </item>
       
     
@@ -151,8 +151,8 @@
         
         <pubDate>Tue, 12 May 2020 00:00:00 +0530</pubDate>
         <link>
-        http://localhost:4000/Me-in-WMHACK-2020</link>
-        <guid isPermaLink="true">http://localhost:4000/Me-in-WMHACK-2020</guid>
+        https://gopavasanth.com/blog/Me-in-WMHACK-2020</link>
+        <guid isPermaLink="true">https://gopavasanth.com/blog/Me-in-WMHACK-2020</guid>
       </item>
       
     
@@ -166,8 +166,8 @@
         
         <pubDate>Tue, 31 Dec 2019 00:00:00 +0530</pubDate>
         <link>
-        http://localhost:4000/Year-in-Review-2019</link>
-        <guid isPermaLink="true">http://localhost:4000/Year-in-Review-2019</guid>
+        https://gopavasanth.com/blog/Year-in-Review-2019</link>
+        <guid isPermaLink="true">https://gopavasanth.com/blog/Year-in-Review-2019</guid>
       </item>
       
     
@@ -181,8 +181,8 @@
         
         <pubDate>Tue, 28 May 2019 00:00:00 +0530</pubDate>
         <link>
-        http://localhost:4000/Into-GSoC-and-WMF-Hackathon-2019-!</link>
-        <guid isPermaLink="true">http://localhost:4000/Into-GSoC-and-WMF-Hackathon-2019-!</guid>
+        https://gopavasanth.com/blog/Into-GSoC-and-WMF-Hackathon-2019-!</link>
+        <guid isPermaLink="true">https://gopavasanth.com/blog/Into-GSoC-and-WMF-Hackathon-2019-!</guid>
       </item>
       
     
@@ -196,8 +196,8 @@
         
         <pubDate>Fri, 10 Aug 2018 00:00:00 +0530</pubDate>
         <link>
-        http://localhost:4000/How-to-Install-Mediawiki-in-Linux</link>
-        <guid isPermaLink="true">http://localhost:4000/How-to-Install-Mediawiki-in-Linux</guid>
+        https://gopavasanth.com/blog/How-to-Install-Mediawiki-in-Linux</link>
+        <guid isPermaLink="true">https://gopavasanth.com/blog/How-to-Install-Mediawiki-in-Linux</guid>
       </item>
       
     
@@ -211,8 +211,8 @@
         
         <pubDate>Fri, 15 Jun 2018 00:00:00 +0530</pubDate>
         <link>
-        http://localhost:4000/Gitamritam-2k18'Yuva</link>
-        <guid isPermaLink="true">http://localhost:4000/Gitamritam-2k18'Yuva</guid>
+        https://gopavasanth.com/blog/Gitamritam-2k18'Yuva</link>
+        <guid isPermaLink="true">https://gopavasanth.com/blog/Gitamritam-2k18'Yuva</guid>
       </item>
       
     
@@ -226,8 +226,8 @@
         
         <pubDate>Sat, 27 Jan 2018 00:00:00 +0530</pubDate>
         <link>
-        http://localhost:4000/FOSS-DAYS</link>
-        <guid isPermaLink="true">http://localhost:4000/FOSS-DAYS</guid>
+        https://gopavasanth.com/blog/FOSS-DAYS</link>
+        <guid isPermaLink="true">https://gopavasanth.com/blog/FOSS-DAYS</guid>
       </item>
       
     
@@ -241,8 +241,8 @@
         
         <pubDate>Thu, 25 Jan 2018 00:00:00 +0530</pubDate>
         <link>
-        http://localhost:4000/How-To-Install-Drupal-In-Your-Localhost</link>
-        <guid isPermaLink="true">http://localhost:4000/How-To-Install-Drupal-In-Your-Localhost</guid>
+        https://gopavasanth.com/blog/How-To-Install-Drupal-In-Your-Localhost</link>
+        <guid isPermaLink="true">https://gopavasanth.com/blog/How-To-Install-Drupal-In-Your-Localhost</guid>
       </item>
       
     
@@ -256,8 +256,8 @@
         
         <pubDate>Wed, 04 Oct 2017 00:00:00 +0530</pubDate>
         <link>
-        http://localhost:4000/Trip-On-Dussehra-Vacation</link>
-        <guid isPermaLink="true">http://localhost:4000/Trip-On-Dussehra-Vacation</guid>
+        https://gopavasanth.com/blog/Trip-On-Dussehra-Vacation</link>
+        <guid isPermaLink="true">https://gopavasanth.com/blog/Trip-On-Dussehra-Vacation</guid>
       </item>
       
     

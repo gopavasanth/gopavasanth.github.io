@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <!-- Document Settings -->
     <meta charset="utf-8" />
@@ -8,8 +8,7 @@
     <!-- Base Meta -->
     {% include dynamic_title.html %}
     <title>
-      {% if title %}{{ title }}{% elsif page.title %}{{ page.title | default: ""
-      }}{% else %}{{ site.title }}{% endif %}
+      {% if title %}{{ title }}{% elsif page.title %}{{ page.title }} · Vasanth Gopa{% else %}{{ site.title }}{% endif %}
     </title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

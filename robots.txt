@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /blog-app/
+Disallow: /temp/
+
+Sitemap: https://gopavasanth.com/sitemap.xml

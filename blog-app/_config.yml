@@ -8,10 +8,10 @@ language: 'en-uk'
 baseurl: /blog/
 
 # Public site URL used for canonical links and footer
-url: https://gopavasanth.github.io
+url: https://gopavasanth.com
 
 # Website info
-title: Gopa's-Blog
+title: Vasanth Gopa's Blog
 description: Exploring, Experimenting, and Enjoying the little Experiences 💫
 cover: assets/images/blog-cover.jpg
 logo: assets/images/Gopa.jpg
