@@ -209,7 +209,7 @@ window.HOME_DATA = {
   // Links next to the photo in the header.
   headerLinks: [
     { label: "github",    href: "https://github.com/gopavasanth" },
-    { label: "linkedin",  href: "https://www.linkedin.com/in/gopa-vasanth" },
+    { label: "linkedin",  href: "https://www.linkedin.com/in/gopavasanth/" },
     { label: "mediawiki", href: "https://www.mediawiki.org/wiki/User:Gopavasanth" },
     { label: "email",     href: "mailto:gopavasanth1999@gmail.com" }
   ],
@@ -217,7 +217,7 @@ window.HOME_DATA = {
   // Links in the footer, right of the email address.
   footerLinks: [
     { label: "github",   href: "https://github.com/gopavasanth" },
-    { label: "linkedin", href: "https://www.linkedin.com/in/gopa-vasanth" },
+    { label: "linkedin", href: "https://www.linkedin.com/in/gopavasanth/" },
     { label: "gerrit",   href: "https://gerrit.wikimedia.org/r/#/q/gopavasanth" },
     { label: "events",   href: "https://www.mediawiki.org/wiki/User:Gopavasanth/Events_and_Activities" }
   ],
